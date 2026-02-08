@@ -89,8 +89,8 @@ export default function Footer() {
             <div className="flex items-center">
               <Link className='' href="/">
                 <Image
-                  src="/images/logo.svg"
-                  alt="FORPINK.COM"
+                  src="/images/logo/logo-02.png"
+                  alt="Amiro.com"
                   width={190}
                   height={80}
                   className="w-36 sm:w-40 "
@@ -150,7 +150,7 @@ export default function Footer() {
             <div className="flex flex-row gap-2 pt-4 w-fit">
               {/* Apple App Store Badge */}
               <a
-                href="https://apps.apple.com/app/forpink/id123456789"
+                href="https://apps.apple.com/app/amiro/id123456789"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" cursor-pointer hover:opacity-80 transition-opacity"
@@ -167,7 +167,7 @@ export default function Footer() {
               
               {/* Google Play Store Badge */}
               <a
-                href="https://play.google.com/store/apps/details?id=com.forpink.app"
+                href="https://play.google.com/store/apps/details?id=com.amiro.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" cursor-pointer hover:opacity-80 transition-opacity"
@@ -322,10 +322,10 @@ export default function Footer() {
                     <div className="flex items-center space-x-3">
                       <Mail className="w-4 h-4 text-gray-900 flex-shrink-0" />
                       <a
-                        href={`mailto:${footerData.contact?.email || 'forpink@gmail.com'}`}
+                        href={`mailto:${footerData.contact?.email || 'amiro@gmail.com'}`}
                         className="text-gray-900 text-sm hover:text-pink-400 transition-colors duration-300"
                       >
-                        Email: {footerData.contact?.email || 'forpink@gmail.com'}
+                        Email: {footerData.contact?.email || 'amiro@gmail.com'}
                       </a>
                     </div>
 

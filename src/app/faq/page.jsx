@@ -167,7 +167,7 @@ export default function FAQ() {
                 {
                     id: "warranty-2",
                     question: "How do I contact customer support?",
-                    answer: "You can contact us via email at forpink@gmail.com, phone at +8801XXXXXXXXX, or through our live chat feature. Our customer service team is available Monday-Friday, 9:00 AM - 6:00 PM."
+                    answer: "You can contact us via email at amiro@gmail.com, phone at +8801XXXXXXXXX, or through our live chat feature. Our customer service team is available Monday-Friday, 9:00 AM - 6:00 PM."
                 },
                 {
                     id: "warranty-3",
@@ -254,7 +254,7 @@ export default function FAQ() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                             <div className="flex items-center justify-center space-x-2 text-gray-600">
                                 <Mail className="w-4 h-4 text-pink-500" />
-                                <span>forpink@gmail.com</span>
+                                <span>amiro@gmail.com</span>
                             </div>
                             <div className="flex items-center justify-center space-x-2 text-gray-600">
                                 <Phone className="w-4 h-4 text-pink-500" />

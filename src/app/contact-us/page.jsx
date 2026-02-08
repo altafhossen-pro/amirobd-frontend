@@ -36,7 +36,7 @@ export default function ContactUsPage() {
     const socialLinks = [
         {
             name: 'Facebook',
-            url: 'https://facebook.com/forpink',
+            url: 'https://facebook.com/amiro',
             icon: Facebook,
             color: 'bg-blue-600',
             followers: '25.2K',
@@ -44,7 +44,7 @@ export default function ContactUsPage() {
         },
         {
             name: 'Instagram',
-            url: 'https://instagram.com/forpink',
+            url: 'https://instagram.com/amiro',
             icon: Instagram,
             color: 'bg-pink-600',
             followers: '18.7K',
@@ -52,7 +52,7 @@ export default function ContactUsPage() {
         },
         {
             name: 'Twitter',
-            url: 'https://twitter.com/forpink',
+            url: 'https://twitter.com/amiro',
             icon: Twitter,
             color: 'bg-blue-400',
             followers: '12.3K',
@@ -60,7 +60,7 @@ export default function ContactUsPage() {
         },
         {
             name: 'LinkedIn',
-            url: 'https://linkedin.com/company/forpink',
+            url: 'https://linkedin.com/company/amiro',
             icon: Linkedin,
             color: 'bg-blue-700',
             followers: '8.9K',
@@ -68,7 +68,7 @@ export default function ContactUsPage() {
         },
         {
             name: 'YouTube',
-            url: 'https://youtube.com/forpink',
+            url: 'https://youtube.com/amiro',
             icon: Youtube,
             color: 'bg-red-600',
             followers: '15.6K',
@@ -76,7 +76,7 @@ export default function ContactUsPage() {
         },
         {
             name: 'GitHub',
-            url: 'https://github.com/forpink',
+            url: 'https://github.com/amiro',
             icon: Github,
             color: 'bg-gray-800',
             followers: '2.1K',

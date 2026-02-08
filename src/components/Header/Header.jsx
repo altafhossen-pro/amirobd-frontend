@@ -148,7 +148,7 @@ function Header({ isTrackingShow = true }) {
             <div className="flex items-center">
               <Link href="/">
                 <Image
-                  src="/images/logo.svg"
+                  src="/images/logo/logo-02.png"
                   alt="Logo"
                   width={170}
                   height={70}

@@ -115,7 +115,7 @@ export default function TermsConditions() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="flex items-center justify-center space-x-2 text-gray-600">
                 <Mail className="w-4 h-4 text-pink-500" />
-                <span>forpink@gmail.com</span>
+                <span>amiro@gmail.com</span>
               </div>
               <div className="flex items-center justify-center space-x-2 text-gray-600">
                 <Phone className="w-4 h-4 text-pink-500" />
