@@ -497,7 +497,7 @@ export default function MenuSettings() {
     if (checkingPermission || contextLoading) {
         return (
             <div className="flex items-center justify-center h-64">
-                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-pink-500"></div>
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
             </div>
         );
     }
@@ -528,7 +528,7 @@ export default function MenuSettings() {
                             onClick={() => setActiveTab('header')}
                             className={`py-2 px-1 border-b-2 font-medium text-sm ${
                                 activeTab === 'header'
-                                    ? 'border-pink-500 text-pink-600'
+                                    ? 'border-blue-500 text-blue-600'
                                     : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                             }`}
                         >
@@ -538,7 +538,7 @@ export default function MenuSettings() {
                             onClick={() => setActiveTab('footer')}
                             className={`py-2 px-1 border-b-2 font-medium text-sm ${
                                 activeTab === 'footer'
-                                    ? 'border-pink-500 text-pink-600'
+                                    ? 'border-blue-500 text-blue-600'
                                     : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                             }`}
                         >
@@ -555,7 +555,7 @@ export default function MenuSettings() {
                     hasUpdatePermission && (
                         <button
                             onClick={handleNewMenu}
-                            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                         >
                             <Plus className="w-4 h-4 mr-2" />
                             Add New Header Menu Item
@@ -568,7 +568,7 @@ export default function MenuSettings() {
                             <button
                                 key={section.key}
                                 onClick={() => handleNewMenuForSection(section.key)}
-                                className="inline-flex items-center px-3 py-1.5 border border-pink-300 text-sm font-medium rounded-md text-pink-700 bg-pink-50 hover:bg-pink-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                                className="inline-flex items-center px-3 py-1.5 border border-blue-300 text-sm font-medium rounded-md text-blue-700 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                             >
                                 <Plus className="w-3 h-3 mr-1" />
                                 {section.name}
@@ -581,7 +581,7 @@ export default function MenuSettings() {
             {/* Menu List */}
             {loading ? (
                 <div className="text-center py-8">
-                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-pink-500 mx-auto"></div>
+                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto"></div>
                     <p className="mt-2 text-gray-600">Loading menus...</p>
                 </div>
             ) : activeTab === 'header' ? (
@@ -699,7 +699,7 @@ export default function MenuSettings() {
                                     {hasUpdatePermission && (
                                     <button
                                         onClick={() => handleNewMenuForSection(section.key)}
-                                        className="mt-2 text-pink-600 hover:text-pink-700 text-sm font-medium"
+                                        className="mt-2 text-blue-600 hover:text-blue-700 text-sm font-medium"
                                     >
                                         Add first menu item
                                     </button>
@@ -723,7 +723,7 @@ export default function MenuSettings() {
                                     </h3>
                                     {activeTab === 'footer' && (
                                         <p className="text-sm text-gray-600 mt-1">
-                                            Adding to: <span className="font-medium text-pink-600">
+                                            Adding to: <span className="font-medium text-blue-600">
                                                 {formData.section === 'quickLinks' ? 'Quick Links' : 
                                                  formData.section === 'utilities' ? 'Utilities' :
                                                  formData.section === 'about' ? 'About' :
@@ -748,7 +748,7 @@ export default function MenuSettings() {
                                         type="text"
                                         value={formData.name}
                                         onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                         required
                                     />
                                 </div>
@@ -759,7 +759,7 @@ export default function MenuSettings() {
                                         type="text"
                                         value={formData.href}
                                         onChange={(e) => setFormData(prev => ({ ...prev, href: e.target.value }))}
-                                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                         required
                                     />
                                 </div>
@@ -770,7 +770,7 @@ export default function MenuSettings() {
                                         type="number"
                                         value={formData.order}
                                         onChange={(e) => setFormData(prev => ({ ...prev, order: parseInt(e.target.value) }))}
-                                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                         placeholder="Menu display order"
                                     />
                                     <p className="mt-1 text-xs text-gray-500">Lower numbers appear first</p>
@@ -782,7 +782,7 @@ export default function MenuSettings() {
                                         <select
                                             value={formData.section}
                                             onChange={(e) => setFormData(prev => ({ ...prev, section: e.target.value }))}
-                                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm bg-gray-100"
+                                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm bg-gray-100"
                                             required
                                             disabled
                                         >
@@ -801,7 +801,7 @@ export default function MenuSettings() {
                                     <select
                                         value={formData.target}
                                         onChange={(e) => setFormData(prev => ({ ...prev, target: e.target.value }))}
-                                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                     >
                                         <option value="_self">Same Window</option>
                                         <option value="_blank">New Window</option>
@@ -814,7 +814,7 @@ export default function MenuSettings() {
                                             type="checkbox"
                                             checked={formData.isVisible}
                                             onChange={(e) => setFormData(prev => ({ ...prev, isVisible: e.target.checked }))}
-                                            className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
+                                            className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                                         />
                                         <span className="ml-2 text-sm text-gray-700">Visible</span>
                                     </label>
@@ -824,7 +824,7 @@ export default function MenuSettings() {
                                             type="checkbox"
                                             checked={formData.isActive}
                                             onChange={(e) => setFormData(prev => ({ ...prev, isActive: e.target.checked }))}
-                                            className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
+                                            className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                                         />
                                         <span className="ml-2 text-sm text-gray-700">Active</span>
                                     </label>
@@ -840,7 +840,7 @@ export default function MenuSettings() {
                                     </button>
                                     <button
                                         type="submit"
-                                        className="px-6 py-2 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 transition-colors inline-flex items-center"
+                                        className="px-6 py-2 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors inline-flex items-center"
                                     >
                                         <Save className="w-4 h-4 mr-2" />
                                         {editingMenu ? 'Update Menu' : 'Create Menu'}
@@ -873,7 +873,7 @@ export default function MenuSettings() {
                                             ...prev,
                                             address: e.target.value
                                         }))}
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                         placeholder="230 Park Avenue, Suite 210, New York, NY 10169, USA"
                                         rows={3}
                                     />
@@ -890,7 +890,7 @@ export default function MenuSettings() {
                                             ...prev,
                                             phone: e.target.value
                                         }))}
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                         placeholder="+8801XXXXXXXXX"
                                     />
                                 </div>
@@ -908,7 +908,7 @@ export default function MenuSettings() {
                                             ...prev,
                                             email: e.target.value
                                         }))}
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                         placeholder="amiro@gmail.com"
                                     />
                                 </div>
@@ -924,7 +924,7 @@ export default function MenuSettings() {
                                             ...prev,
                                             callToAction: e.target.value
                                         }))}
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                         placeholder="Feel free to call & mail us anytime!"
                                     />
                                 </div>
@@ -935,7 +935,7 @@ export default function MenuSettings() {
                             <div className="mt-6 flex justify-end">
                                 <button
                                     onClick={handleContactSave}
-                                    className="px-6 py-2 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 transition-colors cursor-pointer"
+                                    className="px-6 py-2 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors cursor-pointer"
                                 >
                                     Save Contact Information
                                 </button>
@@ -961,7 +961,7 @@ export default function MenuSettings() {
                                         <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
                                             {platform === 'facebook' && <Facebook className="w-4 h-4 text-blue-600" />}
                                             {platform === 'twitter' && <Twitter className="w-4 h-4 text-blue-400" />}
-                                            {platform === 'instagram' && <Instagram className="w-4 h-4 text-pink-600" />}
+                                            {platform === 'instagram' && <Instagram className="w-4 h-4 text-blue-600" />}
                                             {platform === 'linkedin' && <Linkedin className="w-4 h-4 text-blue-700" />}
                                         </div>
                                         <h4 className="text-sm font-medium text-gray-900 capitalize">{platform}</h4>
@@ -980,7 +980,7 @@ export default function MenuSettings() {
                                                 [platform]: { ...prev[platform], url: e.target.value }
                                             }));
                                         }}
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                         placeholder={`${platform}.com/your-page`}
                                     />
                                     </div>
@@ -994,7 +994,7 @@ export default function MenuSettings() {
                                                 ...prev,
                                                 [platform]: { ...prev[platform], isActive: e.target.checked }
                                             }))}
-                                            className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
+                                            className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                                         />
                                         <label className="ml-2 text-sm text-gray-700">
                                             Show in footer
@@ -1009,7 +1009,7 @@ export default function MenuSettings() {
                                                 ...prev,
                                                 [platform]: { ...prev[platform], openInNewTab: e.target.checked }
                                             }))}
-                                            className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
+                                            className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                                         />
                                         <label className="ml-2 text-sm text-gray-700">
                                             Open in new tab
@@ -1024,7 +1024,7 @@ export default function MenuSettings() {
                             <div className="mt-6 flex justify-end">
                                 <button
                                     onClick={handleSocialMediaSave}
-                                    className="px-6 py-2 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 transition-colors cursor-pointer"
+                                    className="px-6 py-2 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors cursor-pointer"
                                 >
                                     Save Social Media Links
                                 </button>

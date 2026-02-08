@@ -76,7 +76,7 @@ function CustomerDashboardLayoutContent({ children }) {
         return (
             <div className="min-h-screen bg-gray-50 flex items-center justify-center">
                 <div className="text-center">
-                    <div className="h-12 w-12 border-4 border-pink-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                    <div className="h-12 w-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
                     <p className="text-gray-600">Loading...</p>
                 </div>
             </div>
@@ -128,7 +128,7 @@ function CustomerDashboardLayoutContent({ children }) {
                             {/* Logo - Fixed height */}
                             <div className="flex items-center justify-center h-16 px-6 border-b border-gray-200 flex-shrink-0">
                                 <div className="flex items-center space-x-2">
-                                    <svg className="h-8 w-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg className="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                                     </svg>
                                     <span className="text-xl font-bold text-gray-900">My Account</span>
@@ -248,7 +248,7 @@ export default function CustomerDashboardLayout({ children }) {
         <Suspense fallback={
             <div className="min-h-screen bg-gray-50 flex items-center justify-center">
                 <div className="text-center">
-                    <div className="h-12 w-12 border-4 border-pink-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                    <div className="h-12 w-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
                     <p className="text-gray-600">Loading dashboard...</p>
                 </div>
             </div>

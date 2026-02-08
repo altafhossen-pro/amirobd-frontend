@@ -55,11 +55,11 @@ function ShopPageContent() {
 
     // Sorting options
     const sortingOptions = [
-        { value: 'popular', label: 'Popular', icon: Flame, color: 'bg-[#EF3D6A]' },
-        { value: 'new-arrivals', label: 'New Arrivals', icon: Clock, color: 'bg-[#EF3D6A]' },
-        { value: 'price-low', label: 'Price: Low to High', icon: TrendingUp, color: 'bg-[#EF3D6A]' },
-        { value: 'price-high', label: 'Price: High to Low', icon: TrendingUp, color: 'bg-[#EF3D6A]  ' },
-        { value: 'best-selling', label: 'Best Selling', icon: BarChart3, color: 'bg-[#EF3D6A]' }
+        { value: 'popular', label: 'Popular', icon: Flame, color: 'bg-[#2563EB]' },
+        { value: 'new-arrivals', label: 'New Arrivals', icon: Clock, color: 'bg-[#2563EB]' },
+        { value: 'price-low', label: 'Price: Low to High', icon: TrendingUp, color: 'bg-[#2563EB]' },
+        { value: 'price-high', label: 'Price: High to Low', icon: TrendingUp, color: 'bg-[#2563EB]  ' },
+        { value: 'best-selling', label: 'Best Selling', icon: BarChart3, color: 'bg-[#2563EB]' }
     ];
 
     // Fetch main categories only (no child categories)
@@ -340,7 +340,7 @@ function ShopPageContent() {
                                         selectedRingSizes.length > 0 || priceRange.min || priceRange.max) && (
                                             <button
                                                 onClick={clearAllFilters}
-                                                className="text-pink-500 hover:text-pink-600 text-sm flex items-center space-x-1 cursor-pointer"
+                                                className="text-blue-500 hover:text-blue-600 text-sm flex items-center space-x-1 cursor-pointer"
                                             >
                                                 <X className="w-4 h-4" />
                                                 <span>Reset All</span>
@@ -355,7 +355,7 @@ function ShopPageContent() {
                                                     type="checkbox"
                                                     checked={selectedCategories.includes(category._id)}
                                                     onChange={() => handleCategoryChange(category._id)}
-                                                    className="rounded border-gray-300 text-pink-500 focus:ring-pink-500"
+                                                    className="rounded border-gray-300 text-blue-500 focus:ring-blue-500"
                                                 />
                                                 <span className="text-sm text-gray-700">{category.name}</span>
                                             </label>
@@ -383,7 +383,7 @@ function ShopPageContent() {
                                                             type="checkbox"
                                                             checked={selectedBraceletSizes.includes(size)}
                                                             onChange={() => handleBraceletSizeChange(size)}
-                                                            className="rounded border-gray-300 text-pink-500 focus:ring-pink-500"
+                                                            className="rounded border-gray-300 text-blue-500 focus:ring-blue-500"
                                                         />
                                                         <span className="text-sm text-gray-700">{size}</span>
                                                     </label>
@@ -413,7 +413,7 @@ function ShopPageContent() {
                                                             type="checkbox"
                                                             checked={selectedRingSizes.includes(size)}
                                                             onChange={() => handleRingSizeChange(size)}
-                                                            className="rounded border-gray-300 text-pink-500 focus:ring-pink-500"
+                                                            className="rounded border-gray-300 text-blue-500 focus:ring-blue-500"
                                                         />
                                                         <span className="text-sm text-gray-700">{size}</span>
                                                     </label>
@@ -440,7 +440,7 @@ function ShopPageContent() {
                                                         handlePriceRangeChange('min', value);
                                                     }
                                                 }}
-                                                className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                                                className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                             />
                                             <span className="text-gray-500 text-center text-sm">to</span>
                                             <input
@@ -455,7 +455,7 @@ function ShopPageContent() {
                                                         handlePriceRangeChange('max', value);
                                                     }
                                                 }}
-                                                className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                                                className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                             />
                                         </div>
                                         {(priceRange.min || priceRange.max) && (
@@ -505,7 +505,7 @@ function ShopPageContent() {
                             </div>
                             {loading ? (
                                 <div className="flex justify-center items-center py-12">
-                                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500"></div>
+                                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
                                 </div>
                             ) : searchResults.length > 0 ? (
                                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
@@ -559,7 +559,7 @@ export default function ShopPage() {
             <div className="min-h-screen bg-gray-50 ">
                 <div className="max-w-screen-2xl mx-auto py-4">
                     <div className="flex justify-center items-center py-12">
-                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500"></div>
+                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
                     </div>
                 </div>
                 <Footer />

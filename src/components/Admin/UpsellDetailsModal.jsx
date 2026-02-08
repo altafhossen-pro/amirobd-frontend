@@ -310,7 +310,7 @@ export default function UpsellDetailsModal({ isOpen, onClose, product, onSuccess
                 <div className="p-6 overflow-y-auto max-h-[calc(90vh-140px)]">
                     {loading ? (
                         <div className="text-center py-8">
-                            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-pink-500 mx-auto"></div>
+                            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto"></div>
                             <p className="mt-2 text-gray-500">Loading upsell data...</p>
                         </div>
                     ) : (
@@ -330,7 +330,7 @@ export default function UpsellDetailsModal({ isOpen, onClose, product, onSuccess
                                             className="sr-only peer"
                                             disabled={!upsellData?._id || savingDiscount}
                                         />
-                                        <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-pink-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-pink-600"></div>
+                                        <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
                                     </label>
                                 </div>
 
@@ -344,7 +344,7 @@ export default function UpsellDetailsModal({ isOpen, onClose, product, onSuccess
                                                 value={discountType}
                                                 onChange={(e) => setDiscountType(e.target.value)}
                                                 disabled={savingDiscount || !upsellData?._id}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                             >
                                                 <option value="percentage">Percentage (%)</option>
                                                 <option value="fixed">Fixed Amount (৳)</option>
@@ -371,7 +371,7 @@ export default function UpsellDetailsModal({ isOpen, onClose, product, onSuccess
                                                     }
                                                 }}
                                                 disabled={savingDiscount || !upsellData?._id}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                                 placeholder={discountType === 'percentage' ? '0-100' : '0'}
                                             />
                                             {discountType === 'percentage' && (
@@ -383,7 +383,7 @@ export default function UpsellDetailsModal({ isOpen, onClose, product, onSuccess
                                             <button
                                                 onClick={saveDiscountSettings}
                                                 disabled={savingDiscount}
-                                                className="w-full px-4 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center space-x-2"
+                                                className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center space-x-2"
                                             >
                                                 {savingDiscount ? (
                                                     <>
@@ -430,7 +430,7 @@ export default function UpsellDetailsModal({ isOpen, onClose, product, onSuccess
                                                             <p className="text-xs text-gray-500 mt-1">
                                                                 Order: {link.order}
                                                             </p>
-                                                            <p className="text-sm font-semibold text-pink-600 mt-1">
+                                                            <p className="text-sm font-semibold text-blue-600 mt-1">
                                                                 ৳{link.product.priceRange?.min || 0}
                                                             </p>
                                                         </div>
@@ -471,7 +471,7 @@ export default function UpsellDetailsModal({ isOpen, onClose, product, onSuccess
                                         placeholder="Search products to link..."
                                         value={searchQuery}
                                         onChange={handleSearchChange}
-                                        className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                                        className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                     />
                                 </div>
 
@@ -480,7 +480,7 @@ export default function UpsellDetailsModal({ isOpen, onClose, product, onSuccess
                                     <div className="mb-4">
                                         {searchLoading ? (
                                             <div className="text-center py-4">
-                                                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-pink-500 mx-auto"></div>
+                                                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-500 mx-auto"></div>
                                                 <p className="mt-2 text-sm text-gray-500">Searching...</p>
                                             </div>
                                         ) : searchResults.length === 0 && searchPerformed ? (
@@ -493,7 +493,7 @@ export default function UpsellDetailsModal({ isOpen, onClose, product, onSuccess
                                                 {searchResults.map((product) => (
                                                     <div
                                                         key={product._id}
-                                                        className="border border-gray-200 rounded-lg p-3 hover:border-pink-300 transition-colors cursor-pointer"
+                                                        className="border border-gray-200 rounded-lg p-3 hover:border-blue-300 transition-colors cursor-pointer"
                                                         onClick={() => addProductToSelection(product)}
                                                     >
                                                         <div className="flex items-start space-x-3">
@@ -510,7 +510,7 @@ export default function UpsellDetailsModal({ isOpen, onClose, product, onSuccess
                                                                     ৳{product.priceRange?.min || 0}
                                                                 </p>
                                                             </div>
-                                                            <Plus className="w-4 h-4 text-pink-600" />
+                                                            <Plus className="w-4 h-4 text-blue-600" />
                                                         </div>
                                                     </div>
                                                 ))}
@@ -566,7 +566,7 @@ export default function UpsellDetailsModal({ isOpen, onClose, product, onSuccess
                                     <button
                                         onClick={addSelectedProducts}
                                         disabled={adding}
-                                        className="w-full px-4 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center space-x-2"
+                                        className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center space-x-2"
                                     >
                                         {adding ? (
                                             <>

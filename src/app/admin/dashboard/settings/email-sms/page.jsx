@@ -99,7 +99,7 @@ export default function EmailSMSSettingsPage() {
     return (
       <div className="p-6">
         <div className="flex items-center justify-center h-64">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-pink-600"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
         </div>
       </div>
     );
@@ -236,8 +236,8 @@ export default function EmailSMSSettingsPage() {
               onClick={handleSave}
               disabled={saving}
               className={`
-                flex items-center gap-2 px-6 py-3 bg-pink-600 text-white rounded-lg
-                font-medium hover:bg-pink-700 transition-colors
+                flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg
+                font-medium hover:bg-blue-700 transition-colors
                 ${saving ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}
               `}
             >

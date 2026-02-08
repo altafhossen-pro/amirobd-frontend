@@ -485,7 +485,7 @@ export default function MyOrders() {
                                                     <div className="flex justify-center space-x-2">
                                                         <Link
                                                             href={`/dashboard/my-orders/${order.orderId}`}
-                                                            className="bg-pink-500 hover:bg-pink-600 text-white px-2 py-2 rounded-md flex items-center justify-center gap-1"
+                                                            className="bg-blue-500 hover:bg-blue-600 text-white px-2 py-2 rounded-md flex items-center justify-center gap-1"
                                                             title="View Order"
                                                         >
                                                             <Eye className="h-4 w-4" /> 

@@ -265,7 +265,7 @@ export default function RegisterPage() {
                             onClick={() => setActiveTab('email')}
                             className={`flex-1 flex items-center justify-center py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                                 activeTab === 'email'
-                                    ? 'bg-white text-pink-600 shadow-sm'
+                                    ? 'bg-white text-blue-600 shadow-sm'
                                     : 'text-gray-600 hover:text-gray-900'
                             }`}
                         >
@@ -276,7 +276,7 @@ export default function RegisterPage() {
                             onClick={() => setActiveTab('social')}
                             className={`flex-1 flex items-center justify-center py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                                 activeTab === 'social'
-                                    ? 'bg-white text-pink-600 shadow-sm'
+                                    ? 'bg-white text-blue-600 shadow-sm'
                                     : 'text-gray-600 hover:text-gray-900'
                             }`}
                         >
@@ -289,30 +289,30 @@ export default function RegisterPage() {
                         <div className="space-y-5">
                             {/* Step Indicator */}
                             <div className="flex items-center justify-between mb-6">
-                                <div className={`flex items-center ${currentStep >= 1 ? 'text-pink-600' : 'text-gray-400'}`}>
-                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${currentStep >= 1 ? 'border-pink-600 bg-pink-50' : 'border-gray-300'}`}>
+                                <div className={`flex items-center ${currentStep >= 1 ? 'text-blue-600' : 'text-gray-400'}`}>
+                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${currentStep >= 1 ? 'border-blue-600 bg-blue-50' : 'border-gray-300'}`}>
                                         {currentStep > 1 ? (
-                                            <span className="text-pink-600 font-bold">✓</span>
+                                            <span className="text-blue-600 font-bold">✓</span>
                                         ) : (
                                             <span className="font-bold">1</span>
                                         )}
                                     </div>
                                     <span className="ml-2 text-sm font-medium hidden sm:block">Email</span>
                                 </div>
-                                <div className={`flex-1 h-0.5 mx-2 ${currentStep >= 2 ? 'bg-pink-600' : 'bg-gray-300'}`}></div>
-                                <div className={`flex items-center ${currentStep >= 2 ? 'text-pink-600' : 'text-gray-400'}`}>
-                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${currentStep >= 2 ? 'border-pink-600 bg-pink-50' : 'border-gray-300'}`}>
+                                <div className={`flex-1 h-0.5 mx-2 ${currentStep >= 2 ? 'bg-blue-600' : 'bg-gray-300'}`}></div>
+                                <div className={`flex items-center ${currentStep >= 2 ? 'text-blue-600' : 'text-gray-400'}`}>
+                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${currentStep >= 2 ? 'border-blue-600 bg-blue-50' : 'border-gray-300'}`}>
                                         {currentStep > 2 ? (
-                                            <span className="text-pink-600 font-bold">✓</span>
+                                            <span className="text-blue-600 font-bold">✓</span>
                                         ) : (
                                             <span className="font-bold">2</span>
                                         )}
                                     </div>
                                     <span className="ml-2 text-sm font-medium hidden sm:block">OTP</span>
                                 </div>
-                                <div className={`flex-1 h-0.5 mx-2 ${currentStep >= 3 ? 'bg-pink-600' : 'bg-gray-300'}`}></div>
-                                <div className={`flex items-center ${currentStep >= 3 ? 'text-pink-600' : 'text-gray-400'}`}>
-                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${currentStep >= 3 ? 'border-pink-600 bg-pink-50' : 'border-gray-300'}`}>
+                                <div className={`flex-1 h-0.5 mx-2 ${currentStep >= 3 ? 'bg-blue-600' : 'bg-gray-300'}`}></div>
+                                <div className={`flex items-center ${currentStep >= 3 ? 'text-blue-600' : 'text-gray-400'}`}>
+                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${currentStep >= 3 ? 'border-blue-600 bg-blue-50' : 'border-gray-300'}`}>
                                         <span className="font-bold">3</span>
                                     </div>
                                     <span className="ml-2 text-sm font-medium hidden sm:block">Details</span>
@@ -338,10 +338,10 @@ export default function RegisterPage() {
                                                 required
                                                 value={registerForm.email}
                                                 onChange={handleRegisterChange}
-                                                className={`block w-full pl-12 pr-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-200 bg-gray-50 focus:bg-white ${
+                                                className={`block w-full pl-12 pr-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 bg-gray-50 focus:bg-white ${
                                                     emailError 
                                                         ? 'border-red-500 focus:border-red-500' 
-                                                        : 'border-gray-400 focus:border-pink-500'
+                                                        : 'border-gray-400 focus:border-blue-500'
                                                 }`}
                                                 placeholder="Enter your email address"
                                             />
@@ -362,7 +362,7 @@ export default function RegisterPage() {
                                         type="button"
                                         onClick={handleSendRegisterOTP}
                                         disabled={loading || !registerForm.email || !validateEmail(registerForm.email)}
-                                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
+                                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
                                     >
                                         {loading ? (
                                             <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
@@ -395,7 +395,7 @@ export default function RegisterPage() {
                                                 required
                                                 value={registerForm.otp}
                                                 onChange={handleRegisterChange}
-                                                className="block w-full pl-12 pr-4 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-200 bg-gray-50 focus:bg-white text-center text-lg tracking-widest"
+                                                className="block w-full pl-12 pr-4 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 bg-gray-50 focus:bg-white text-center text-lg tracking-widest"
                                                 placeholder="000000"
                                             />
                                         </div>
@@ -408,7 +408,7 @@ export default function RegisterPage() {
                                         type="button"
                                         onClick={handleVerifyOTP}
                                         disabled={loading || !registerForm.otp || registerForm.otp.length !== 6}
-                                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
+                                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
                                     >
                                         {loading ? (
                                             <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
@@ -425,14 +425,14 @@ export default function RegisterPage() {
                                             type="button"
                                             onClick={handleSendRegisterOTP}
                                             disabled={loading}
-                                            className="flex-1 text-sm text-pink-600 hover:text-pink-700 font-medium disabled:opacity-50"
+                                            className="flex-1 text-sm text-blue-600 hover:text-blue-700 font-medium disabled:opacity-50"
                                         >
                                             Resend OTP
                                         </button>
                                         <button
                                             type="button"
                                             onClick={handleChangeEmail}
-                                            className="flex-1 text-sm text-pink-600 hover:text-pink-700 font-medium"
+                                            className="flex-1 text-sm text-blue-600 hover:text-blue-700 font-medium"
                                         >
                                             Change email
                                         </button>
@@ -459,7 +459,7 @@ export default function RegisterPage() {
                                                 required
                                                 value={registerForm.name}
                                                 onChange={handleRegisterChange}
-                                                className="block w-full pl-12 pr-4 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-200 bg-gray-50 focus:bg-white"
+                                                className="block w-full pl-12 pr-4 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 bg-gray-50 focus:bg-white"
                                                 placeholder="Enter your full name"
                                             />
                                         </div>
@@ -481,7 +481,7 @@ export default function RegisterPage() {
                                                 required
                                                 value={registerForm.password}
                                                 onChange={handleRegisterChange}
-                                                className="block w-full pl-12 pr-12 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-200 bg-gray-50 focus:bg-white"
+                                                className="block w-full pl-12 pr-12 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 bg-gray-50 focus:bg-white"
                                                 placeholder="Create a password"
                                             />
                                             <button
@@ -514,7 +514,7 @@ export default function RegisterPage() {
                                                 required
                                                 value={registerForm.confirmPassword}
                                                 onChange={handleRegisterChange}
-                                                className="block w-full pl-12 pr-12 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-200 bg-gray-50 focus:bg-white"
+                                                className="block w-full pl-12 pr-12 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 bg-gray-50 focus:bg-white"
                                                 placeholder="Confirm your password"
                                             />
                                             <button
@@ -539,15 +539,15 @@ export default function RegisterPage() {
                                             name="terms"
                                             type="checkbox"
                                             required
-                                            className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
+                                            className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                                         />
                                         <label htmlFor="terms" className="ml-2 block text-sm text-gray-700">
                                             I agree to the{' '}
-                                            <Link href="/terms-and-conditions" className="text-pink-600 hover:text-pink-500">
+                                            <Link href="/terms-and-conditions" className="text-blue-600 hover:text-blue-500">
                                                 Terms of Service
                                             </Link>{' '}
                                             and{' '}
-                                            <Link href="/privacy-policy" className="text-pink-600 hover:text-pink-500">
+                                            <Link href="/privacy-policy" className="text-blue-600 hover:text-blue-500">
                                                 Privacy Policy
                                             </Link>
                                         </label>
@@ -556,7 +556,7 @@ export default function RegisterPage() {
                                     <button
                                         type="submit"
                                         disabled={loading}
-                                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
+                                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
                                     >
                                         {loading ? (
                                             <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
@@ -589,7 +589,7 @@ export default function RegisterPage() {
                             className="text-sm text-gray-600 hover:text-gray-900 flex items-center justify-center mx-auto group"
                         >
                             <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-                            Already have an account? <span className="text-pink-600 hover:text-pink-700 font-medium ms-2">Sign in</span>
+                            Already have an account? <span className="text-blue-600 hover:text-blue-700 font-medium ms-2">Sign in</span>
                         </Link>
                     </div>
 

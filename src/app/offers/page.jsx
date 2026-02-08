@@ -95,7 +95,7 @@ export default function Offers() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
 
             {/* Main Content */}
             <div className="max-w-7xl mx-auto px-4 py-6">
@@ -109,7 +109,7 @@ export default function Offers() {
                 {/* Loading State */}
                 {loading && (
                     <div className="flex items-center justify-center py-12">
-                        <Loader2 className="w-8 h-8 animate-spin text-pink-500 mr-3" />
+                        <Loader2 className="w-8 h-8 animate-spin text-blue-500 mr-3" />
                         <span className="text-gray-600">Loading amazing offers...</span>
                     </div>
                 )}
@@ -122,7 +122,7 @@ export default function Offers() {
                             <p className="text-red-600 mb-4">{error}</p>
                             <button 
                                 onClick={fetchPublicCoupons}
-                                className="px-6 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors"
+                                className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
                             >
                                 Try Again
                             </button>
@@ -150,7 +150,7 @@ export default function Offers() {
                         return (
                             <div key={coupon._id} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 ">
                                 {/* Header with discount badge */}
-                                <div className="bg-gradient-to-r from-pink-500 to-purple-500 p-4 text-white text-center">
+                                <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 text-white text-center">
                                     <div className="text-2xl font-bold">{formatDiscount(coupon)}</div>
                                     <div className="text-sm opacity-90">{coupon.description || 'Special Offer'}</div>
                                 </div>
@@ -170,7 +170,7 @@ export default function Offers() {
                                             ].map((item, index) => (
                                                 <div key={index} className={`rounded-lg p-3 text-center shadow-sm border ${isExpired
                                                         ? 'bg-red-50 border-red-200'
-                                                        : 'bg-gradient-to-br from-pink-50 to-purple-50 border-pink-200'
+                                                        : 'bg-gradient-to-br from-blue-50 to-purple-50 border-blue-200'
                                                     }`}>
                                                     <div className="text-lg font-bold text-gray-900">
                                                         {formatNumber(item.value)}
@@ -183,15 +183,15 @@ export default function Offers() {
 
                                     {/* Coupon Code Section */}
                                     <div className="mb-4">
-                                        <div className="bg-gradient-to-r from-pink-50 to-purple-50 border-2 border-dashed border-pink-300 rounded-xl p-4 shadow-sm">
+                                        <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-dashed border-blue-300 rounded-xl p-4 shadow-sm">
                                             <div className="text-center mb-2">
                                                 <span className="text-sm text-gray-600">Coupon Code</span>
                                             </div>
                                             <div className="flex items-center justify-between">
-                                                <span className="text-xl font-bold text-pink-600 tracking-wider">{coupon.code}</span>
+                                                <span className="text-xl font-bold text-blue-600 tracking-wider">{coupon.code}</span>
                                                 <button
                                                     onClick={() => copyToClipboard(coupon.code, coupon._id)}
-                                                    className="text-pink-600 hover:text-pink-700 transition-colors p-2 rounded-full hover:bg-pink-100 cursor-pointer"
+                                                    className="text-blue-600 hover:text-blue-700 transition-colors p-2 rounded-full hover:bg-blue-100 cursor-pointer"
                                                 >
                                                     {copiedCode === coupon._id ? (
                                                         <CheckCircle className="w-5 h-5" />
@@ -258,8 +258,8 @@ export default function Offers() {
                                 description: "Paste the code at checkout and enjoy your discount"
                             }
                         ].map((item, index) => (
-                            <div key={index} className="text-center p-6 rounded-xl bg-gradient-to-br from-pink-50 to-purple-50 border border-pink-100 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                                <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg shadow-lg">
+                            <div key={index} className="text-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-100 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg shadow-lg">
                                     {item.step}
                                 </div>
                                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>

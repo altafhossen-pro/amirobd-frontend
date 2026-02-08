@@ -82,7 +82,7 @@ export default function CustomerHeader() {
                     <Link href="/wishlist" className="relative p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
                         <Heart className="h-6 w-6" />
                         {wishlistCount > 0 && (
-                            <span className="absolute -top-1 -right-1 h-5 w-5 bg-pink-500 text-white text-xs rounded-full flex items-center justify-center">
+                            <span className="absolute -top-1 -right-1 h-5 w-5 bg-blue-500 text-white text-xs rounded-full flex items-center justify-center">
                                 {wishlistCount}
                             </span>
                         )}

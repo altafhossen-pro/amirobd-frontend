@@ -1053,7 +1053,7 @@ export default function AdminOrdersPage() {
                                                     href={`https://steadfast.com.bd/user/consignment/${order.steadfastConsignmentId}`}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="text-xs font-medium text-pink-600 mt-1 hover:text-pink-700 hover:underline cursor-pointer block"
+                                                    className="text-xs font-medium text-blue-600 mt-1 hover:text-blue-700 hover:underline cursor-pointer block"
                                                 >
                                                     Steadfast: {order.steadfastConsignmentId}
                                                 </a>
@@ -1095,7 +1095,7 @@ export default function AdminOrdersPage() {
                                                             </div>
                                                         )}
                                                         {order.loyaltyDiscount > 0 && (
-                                                            <div className="text-pink-600 font-medium">
+                                                            <div className="text-blue-600 font-medium">
                                                                 -৳{order.loyaltyDiscount} (Loyalty)
                                                             </div>
                                                         )}

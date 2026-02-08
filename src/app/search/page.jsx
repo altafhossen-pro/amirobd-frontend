@@ -273,7 +273,7 @@ function SearchPageContent() {
                                 selectedRingSizes.length > 0 || priceRange.min || priceRange.max) && (
                                     <button
                                         onClick={clearAllFilters}
-                                        className="text-pink-500 hover:text-pink-600 text-sm flex items-center space-x-1"
+                                        className="text-blue-500 hover:text-blue-600 text-sm flex items-center space-x-1"
                                     >
                                         <X className="w-4 h-4" />
                                         <span>Clear all filters</span>
@@ -296,7 +296,7 @@ function SearchPageContent() {
                                                     type="checkbox"
                                                     checked={selectedCategories.includes(category._id)}
                                                     onChange={() => handleCategoryChange(category._id)}
-                                                    className="rounded border-gray-300 text-pink-500 focus:ring-pink-500"
+                                                    className="rounded border-gray-300 text-blue-500 focus:ring-blue-500"
                                                 />
                                                 <span className="text-sm text-gray-700">{category.name}</span>
                                             </label>
@@ -324,7 +324,7 @@ function SearchPageContent() {
                                                             type="checkbox"
                                                             checked={selectedBraceletSizes.includes(size)}
                                                             onChange={() => handleBraceletSizeChange(size)}
-                                                            className="rounded border-gray-300 text-pink-500 focus:ring-pink-500"
+                                                            className="rounded border-gray-300 text-blue-500 focus:ring-blue-500"
                                                         />
                                                         <span className="text-sm text-gray-700">{size}</span>
                                                     </label>
@@ -354,7 +354,7 @@ function SearchPageContent() {
                                                             type="checkbox"
                                                             checked={selectedRingSizes.includes(size)}
                                                             onChange={() => handleRingSizeChange(size)}
-                                                            className="rounded border-gray-300 text-pink-500 focus:ring-pink-500"
+                                                            className="rounded border-gray-300 text-blue-500 focus:ring-blue-500"
                                                         />
                                                         <span className="text-sm text-gray-700">{size}</span>
                                                     </label>
@@ -381,7 +381,7 @@ function SearchPageContent() {
                                                         handlePriceRangeChange('min', value);
                                                     }
                                                 }}
-                                                className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                                                className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                             />
                                             <span className="text-gray-500 text-center text-sm">to</span>
                                             <input
@@ -396,7 +396,7 @@ function SearchPageContent() {
                                                         handlePriceRangeChange('max', value);
                                                     }
                                                 }}
-                                                className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                                                className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                             />
                                         </div>
                                         {(priceRange.min || priceRange.max) && (
@@ -418,7 +418,7 @@ function SearchPageContent() {
                         <div className="flex-1">
                             {loading ? (
                                 <div className="flex justify-center items-center py-12">
-                                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500"></div>
+                                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
                                 </div>
                             ) : searchResults.length > 0 ? (
                                 <div className="grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
@@ -481,7 +481,7 @@ function SearchPageContent() {
                 {/* Search Results Header */}
                 <div className="mb-6">
                     <h1 className="text-xl font-bold text-gray-900 mb-2">
-                        Search Results for: <span className="text-pink-500">"{query}"</span>
+                        Search Results for: <span className="text-blue-500">"{query}"</span>
                     </h1>
                     <div className="flex items-center justify-between">
                         <p className="text-gray-600">
@@ -491,7 +491,7 @@ function SearchPageContent() {
                             selectedRingSizes.length > 0 || priceRange.min || priceRange.max) && (
                                 <button
                                     onClick={clearAllFilters}
-                                    className="text-pink-500 hover:text-pink-600 text-sm flex items-center space-x-1"
+                                    className="text-blue-500 hover:text-blue-600 text-sm flex items-center space-x-1"
                                 >
                                     <X className="w-4 h-4" />
                                     <span>Clear all filters</span>
@@ -514,7 +514,7 @@ function SearchPageContent() {
                                                 type="checkbox"
                                                 checked={selectedCategories.includes(category._id)}
                                                 onChange={() => handleCategoryChange(category._id)}
-                                                className="rounded border-gray-300 text-pink-500 focus:ring-pink-500"
+                                                className="rounded border-gray-300 text-blue-500 focus:ring-blue-500"
                                             />
                                             <span className="text-sm text-gray-700">{category.name}</span>
                                         </label>
@@ -542,7 +542,7 @@ function SearchPageContent() {
                                                         type="checkbox"
                                                         checked={selectedBraceletSizes.includes(size)}
                                                         onChange={() => handleBraceletSizeChange(size)}
-                                                        className="rounded border-gray-300 text-pink-500 focus:ring-pink-500"
+                                                        className="rounded border-gray-300 text-blue-500 focus:ring-blue-500"
                                                     />
                                                     <span className="text-sm text-gray-700">{size}</span>
                                                 </label>
@@ -572,7 +572,7 @@ function SearchPageContent() {
                                                         type="checkbox"
                                                         checked={selectedRingSizes.includes(size)}
                                                         onChange={() => handleRingSizeChange(size)}
-                                                        className="rounded border-gray-300 text-pink-500 focus:ring-pink-500"
+                                                        className="rounded border-gray-300 text-blue-500 focus:ring-blue-500"
                                                     />
                                                     <span className="text-sm text-gray-700">{size}</span>
                                                 </label>
@@ -599,7 +599,7 @@ function SearchPageContent() {
                                                      handlePriceRangeChange('min', value);
                                                  }
                                              }}
-                                             className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                                             className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                          />
                                          <span className="text-gray-500 text-center text-sm">to</span>
                                          <input
@@ -614,7 +614,7 @@ function SearchPageContent() {
                                                      handlePriceRangeChange('max', value);
                                                  }
                                              }}
-                                             className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                                             className="w-full px-2 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                          />
                                      </div>
                                      {(priceRange.min || priceRange.max) && (
@@ -636,7 +636,7 @@ function SearchPageContent() {
                     <div className="flex-1">
                         {loading ? (
                             <div className="flex justify-center items-center py-12">
-                                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500"></div>
+                                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
                             </div>
                                                  ) : searchResults.length > 0 ? (
                              <div className="grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
@@ -685,7 +685,7 @@ export default function SearchPage() {
             <div className="min-h-screen bg-gray-50">
                 <div className="2xl:max-w-7xl xl:max-w-6xl mx-auto px-4 py-4">
                     <div className="flex justify-center items-center py-12">
-                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500"></div>
+                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
                     </div>
                 </div>
             </div>

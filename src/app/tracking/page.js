@@ -143,14 +143,14 @@ function TrackingPageContent() {
                 value={orderId}
                 onChange={(e) => setOrderId(e.target.value)}
                 placeholder="Enter your order ID (e.g., 579614)"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-pink-500 focus:border-pink-500 focus:outline-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-blue-500 focus:border-blue-500 focus:outline-none"
               />
             </div>
             <div className="flex items-end">
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-pink-500 hover:bg-pink-600 disabled:bg-pink-300 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2"
+                className="bg-blue-500 hover:bg-blue-600 disabled:bg-blue-300 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2"
               >
                 {loading ? (
                   <>
@@ -252,7 +252,7 @@ function TrackingPageContent() {
                   {loyaltyDiscount > 0 && (
                     <div className="flex justify-between items-center text-sm">
                       <span className="text-gray-600">Loyalty Points Discount:</span>
-                      <span className="font-semibold text-pink-600">-৳{loyaltyDiscount.toFixed(2)}</span>
+                      <span className="font-semibold text-blue-600">-৳{loyaltyDiscount.toFixed(2)}</span>
                     </div>
                   )}
                   <div className="border-t border-gray-200 pt-2 mt-2">
@@ -380,7 +380,7 @@ export default function TrackingPage() {
     <Suspense fallback={
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="h-12 w-12 border-4 border-pink-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <div className="h-12 w-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
           <p className="text-gray-600">Loading tracking page...</p>
         </div>
       </div>

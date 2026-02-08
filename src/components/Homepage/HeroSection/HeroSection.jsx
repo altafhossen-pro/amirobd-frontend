@@ -16,9 +16,9 @@ import './HeroSection.css';
 function HeroSlider({ sliderData, loading }) {
     if (loading) {
         return (
-            <div className="w-full h-full bg-gradient-to-r from-pink-100 via-pink-50 to-pink-100 rounded-2xl flex items-center justify-center">
+            <div className="w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 rounded-2xl flex items-center justify-center">
                 <div className="text-center">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500 mx-auto mb-4"></div>
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
                     <p className="text-gray-600">Loading hero banners...</p>
                 </div>
             </div>
@@ -27,16 +27,16 @@ function HeroSlider({ sliderData, loading }) {
 
     if (!sliderData || sliderData.length === 0) {
         return (
-            <div className="w-full h-full bg-gradient-to-r from-pink-100 via-pink-50 to-pink-100 rounded-2xl flex items-center justify-center">
+            <div className="w-full h-full bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 rounded-2xl flex items-center justify-center">
                 <div className="text-center p-8">
-                    <div className="w-20 h-20 mx-auto mb-6 bg-pink-200 rounded-full flex items-center justify-center">
-                        <svg className="w-10 h-10 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-20 h-20 mx-auto mb-6 bg-blue-200 rounded-full flex items-center justify-center">
+                        <svg className="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
                     </div>
                     <h3 className="text-xl font-semibold text-gray-700 mb-2">No Hero Banners</h3>
                     <p className="text-gray-500 mb-4">Hero banners will appear here once added by admin</p>
-                    <div className="inline-flex items-center px-4 py-2 bg-pink-100 text-pink-700 rounded-lg text-sm font-medium">
+                    <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">
                         <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
@@ -232,7 +232,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section className="bg-gradient-to-br from-pink-50 via-white to-purple-50 py-4 sm:py-6 lg:py-8 px-4">
+        <section className="bg-gradient-to-br from-blue-50 via-white to-purple-50 py-4 sm:py-6 lg:py-8 px-4">
             <div className="max-w-screen-2xl mx-auto">
                 <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:items-start">
                     {/* Left Slider - Full width on mobile, 64% on desktop */}

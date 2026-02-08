@@ -62,14 +62,14 @@ export default function TermsConditions() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-pink-100 rounded-full mb-6">
-            <FileText className="w-8 h-8 text-pink-500" />
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+            <FileText className="w-8 h-8 text-blue-500" />
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Terms & Conditions</h1>
           <p className="text-gray-600 text-lg">Please read these terms carefully</p>
@@ -84,8 +84,8 @@ export default function TermsConditions() {
             <div key={section.id} className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center">
-                    <section.icon className="w-5 h-5 text-pink-500" />
+                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <section.icon className="w-5 h-5 text-blue-500" />
                   </div>
                 </div>
                 <div className="flex-1">
@@ -114,11 +114,11 @@ export default function TermsConditions() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="flex items-center justify-center space-x-2 text-gray-600">
-                <Mail className="w-4 h-4 text-pink-500" />
+                <Mail className="w-4 h-4 text-blue-500" />
                 <span>amiro@gmail.com</span>
               </div>
               <div className="flex items-center justify-center space-x-2 text-gray-600">
-                <Phone className="w-4 h-4 text-pink-500" />
+                <Phone className="w-4 h-4 text-blue-500" />
                 <span>+8801313664466</span>
               </div>
             </div>

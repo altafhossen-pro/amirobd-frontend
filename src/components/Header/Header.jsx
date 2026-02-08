@@ -218,7 +218,7 @@ function Header({ isTrackingShow = true }) {
                   aria-label={`Wishlist with ${wishlistCount} items`}
                 >
                   <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />
-                  <span className="absolute -top-1 -right-1 bg-pink-500 text-white text-xs rounded-full w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 bg-blue-500 text-white text-xs rounded-full w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center">
                     {wishlistCount}
                   </span>
                 </button>
@@ -230,7 +230,7 @@ function Header({ isTrackingShow = true }) {
                   aria-label={`Shopping cart with ${cartCount} items`}
                 >
                   <ShoppingCart className="w-4 h-4 sm:w-5 sm:h-5 text-gray-700" />
-                  <span className="absolute -top-1 -right-1 bg-pink-500 text-white text-xs rounded-full w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 bg-blue-500 text-white text-xs rounded-full w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center">
                     {cartLoading ? (
                       <div className="">0</div>
                     ) : (
@@ -339,8 +339,8 @@ function Header({ isTrackingShow = true }) {
                         onClick={() => setIsMobileMenuOpen(false)}
                         className={`mobile-menu-item px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
                           isActive
-                            ? 'bg-[#EF3D6A] text-white shadow-sm'
-                            : 'text-gray-700 hover:bg-pink-50 hover:text-[#EF3D6A]'
+                            ? 'bg-[#2563EB] text-white shadow-sm'
+                            : 'text-gray-700 hover:bg-blue-50 hover:text-[#2563EB]'
                         }`}
                         style={{ 
                           animationDelay: `${index * 0.05}s`

@@ -210,7 +210,7 @@ export default function CartModal({ isOpen, onClose }) {
                 {/* Header */}
                 <div className={`flex items-center justify-between p-4 border-b border-gray-200 flex-shrink-0 transition-all duration-300 ease-out ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
                     <div className="flex items-center gap-2">
-                        <ShoppingBag className="w-6 h-6 text-[#EF3D6A]" />
+                        <ShoppingBag className="w-6 h-6 text-[#2563EB]" />
                         <h2 className="text-lg font-semibold text-gray-800">Shopping Cart</h2>
                         {stockLoading && (
                             <div className="flex items-center gap-1 text-xs text-gray-500">
@@ -336,7 +336,7 @@ export default function CartModal({ isOpen, onClose }) {
                                         </p>
 
                                         <div className='flex items-center justify-between'>
-                                            <p className="text-sm font-semibold text-[#EF3D6A] ">
+                                            <p className="text-sm font-semibold text-[#2563EB] ">
                                                 {item.total}৳
                                             </p>
                                             <div className="flex items-center justify-between">
@@ -345,21 +345,21 @@ export default function CartModal({ isOpen, onClose }) {
                                                         Remove from cart
                                                     </div>
                                                 ) : (
-                                                    <div className="flex items-center border border-[#EF3D6A] rounded-md p-1">
+                                                    <div className="flex items-center border border-[#2563EB] rounded-md p-1">
                                                         <button
                                                             onClick={() => handleQuantityChange(item.id, -1)}
-                                                            className="p-1 cursor-pointer transition-colors hover:bg-[#EF3D6A] hover:text-white rounded"
+                                                            className="p-1 cursor-pointer transition-colors hover:bg-[#2563EB] hover:text-white rounded"
                                                         >
                                                             <Minus className="w-3 h-3" />
                                                         </button>
-                                                        <span className="px-2 text-sm font-medium text-[#EF3D6A]">{item.quantity}</span>
+                                                        <span className="px-2 text-sm font-medium text-[#2563EB]">{item.quantity}</span>
                                                         <button
                                                             onClick={() => handleQuantityChange(item.id, 1)}
                                                             disabled={item.quantity >= (stockData[item.id]?.availableStock || item.stockQuantity || 0)}
                                                             className={`p-1 transition-colors rounded ${
                                                                 item.quantity >= (stockData[item.id]?.availableStock || item.stockQuantity || 0)
                                                                     ? 'opacity-50 cursor-not-allowed'
-                                                                    : 'cursor-pointer hover:bg-[#EF3D6A] hover:text-white'
+                                                                    : 'cursor-pointer hover:bg-[#2563EB] hover:text-white'
                                                             }`}
                                                         >
                                                             <Plus className="w-3 h-3" />
@@ -377,7 +377,7 @@ export default function CartModal({ isOpen, onClose }) {
                                     <div className='flex items-center justify-center'>
                                         <button
                                             onClick={() => removeFromCart(item.id)}
-                                            className="p-2 h-fit text-[#EF3D6A] hover:bg-[#EF3D6A] hover:text-white rounded-full transition-colors cursor-pointer"
+                                            className="p-2 h-fit text-[#2563EB] hover:bg-[#2563EB] hover:text-white rounded-full transition-colors cursor-pointer"
                                             aria-label={`Remove ${item.title} from cart`}
                                         >
                                             <Trash2 className="w-4 h-4" />
@@ -438,11 +438,11 @@ export default function CartModal({ isOpen, onClose }) {
                                         <div className="space-y-1">
                                             <p className="text-sm text-gray-600 flex justify-between">
                                                 <span>Inside Dhaka:</span>
-                                                <span className="font-medium text-[#EF3D6A]">{deliveryChargeSettings.insideDhaka} ৳</span>
+                                                <span className="font-medium text-[#2563EB]">{deliveryChargeSettings.insideDhaka} ৳</span>
                                             </p>
                                             <p className="text-sm text-gray-600 flex justify-between">
                                                 <span>Outside Dhaka:</span>
-                                                <span className="font-medium text-[#EF3D6A]">{deliveryChargeSettings.outsideDhaka} ৳</span>
+                                                <span className="font-medium text-[#2563EB]">{deliveryChargeSettings.outsideDhaka} ৳</span>
                                             </p>
                                         </div>
                                     </div>
@@ -451,7 +451,7 @@ export default function CartModal({ isOpen, onClose }) {
                                 <Link 
                                     href="/checkout"
                                     onClick={onClose}
-                                    className="w-full bg-[#EF3D6A] text-white py-3 px-4 rounded-lg font-semibold hover:bg-[#D63447] transition-all duration-200 flex items-center justify-between cursor-pointer hover:scale-[1.02] hover:shadow-lg"
+                                    className="w-full bg-[#2563EB] text-white py-3 px-4 rounded-lg font-semibold hover:bg-[#D63447] transition-all duration-200 flex items-center justify-between cursor-pointer hover:scale-[1.02] hover:shadow-lg"
                                 >
                                     <span>Proceed To Checkout</span>
                                     <span>

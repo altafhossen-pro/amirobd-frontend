@@ -77,7 +77,7 @@ function OrderConfirmation() {
         }
     };
     return (
-        <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50 flex flex-col">
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex flex-col">
             <div className="flex-1 flex items-center justify-center px-4 py-4">
                 <div className="bg-white rounded-2xl shadow-xl p-4 text-center w-full max-w-xl mx-4">
                     {/* Success Icon */}
@@ -179,7 +179,7 @@ function OrderConfirmation() {
 
                         {/* Order Date */}
                         {createdAt && (
-                            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-2 border border-purple-100">
+                            <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg p-2 border border-purple-100">
                                 <div className="flex items-center justify-center mb-1">
                                     <Calendar className="w-3 h-3 text-purple-600 mr-1" />
                                     <span className="text-xs font-medium text-purple-600">Date</span>
@@ -207,7 +207,7 @@ function OrderConfirmation() {
                                 {loyaltyDiscount && (
                                     <div className="flex justify-between items-center text-sm">
                                         <span className="text-gray-600">Loyalty Points Discount</span>
-                                        <span className="font-semibold text-pink-600">
+                                        <span className="font-semibold text-blue-600">
                                             -৳{parseFloat(loyaltyDiscount).toFixed(2)}
                                         </span>
                                     </div>
@@ -259,7 +259,7 @@ function OrderConfirmation() {
                             {!isGuestOrder && (
                                 <Link
                                     href={`/dashboard/my-orders/${orderId}`}
-                                    className="inline-flex items-center justify-center w-full px-6 py-3 border border-transparent text-base font-semibold rounded-xl text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                                    className="inline-flex items-center justify-center w-full px-6 py-3 border border-transparent text-base font-semibold rounded-xl text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                                 >
                                     <Eye className="w-5 h-5 mr-2" />
                                     View Order Details
@@ -279,7 +279,7 @@ function OrderConfirmation() {
 // Wrapper component with Suspense boundary
 export default function OrderConfirmationWithSuspense() {
     return (
-        <Suspense fallback={<div className="min-h-screen bg-gray-50 flex items-center justify-center"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-pink-500"></div></div>}>
+        <Suspense fallback={<div className="min-h-screen bg-gray-50 flex items-center justify-center"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div></div>}>
             <OrderConfirmation />
         </Suspense>
     );

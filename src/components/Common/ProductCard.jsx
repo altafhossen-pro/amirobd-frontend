@@ -172,7 +172,7 @@ function ProductCard({ product, onWishlistToggle, onAddToCart, showWishlistOnHov
                         onWishlistToggle(product.id);
                     }}
                     className={`absolute top-3 right-3 p-2 rounded-full transition-all duration-300 cursor-pointer ${product.isWishlisted
-                        ? 'bg-pink-500 text-white'
+                        ? 'bg-blue-500 text-white'
                         : 'bg-white/80 text-gray-600 hover:bg-gray-200 cursor-pointer hover:text-black'
                         }`}
                     aria-label={product.isWishlisted ? `Remove ${product.name} from wishlist` : `Add ${product.name} to wishlist`}
@@ -201,7 +201,7 @@ function ProductCard({ product, onWishlistToggle, onAddToCart, showWishlistOnHov
 
                 {/* Price */}
                 <div className="flex items-center gap-2 mb-3">
-                    <span className="font-semibold text-sm sm:text-base text-pink-500">{product?.price?.toFixed(2)} BDT</span>
+                    <span className="font-semibold text-sm sm:text-base text-blue-500">{product?.price?.toFixed(2)} BDT</span>
                     {product?.originalPrice && (
                         <span className="text-gray-500 line-through text-xs sm:text-sm">{product?.originalPrice?.toFixed(2)} BDT</span>
                     )}
@@ -222,7 +222,7 @@ function ProductCard({ product, onWishlistToggle, onAddToCart, showWishlistOnHov
                             e.stopPropagation();
                             onAddToCart(product.id);
                         }}
-                        className="w-full py-2 sm:py-3 px-3 sm:px-4 cursor-pointer rounded-lg font-semibold text-xs sm:text-sm transition-all duration-300 border border-[#EF3D6A] text-[#EF3D6A] hover:bg-[#EF3D6A] hover:text-white"
+                        className="w-full py-2 sm:py-3 px-3 sm:px-4 cursor-pointer rounded-lg font-semibold text-xs sm:text-sm transition-all duration-300 border border-[#2563EB] text-[#2563EB] hover:bg-[#2563EB] hover:text-white"
                         aria-label={`Add ${product.name} to cart`}
                     >
                         Add to cart

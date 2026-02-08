@@ -203,7 +203,7 @@ export default function DashboardPage() {
         return (
             <div className="flex items-center justify-center h-64">
                 <div className="flex items-center space-x-2">
-                    <RefreshCw className="h-6 w-6 animate-spin text-pink-600" />
+                    <RefreshCw className="h-6 w-6 animate-spin text-blue-600" />
                     <span className="text-gray-600">Loading dashboard...</span>
                 </div>
             </div>
@@ -230,7 +230,7 @@ export default function DashboardPage() {
                     <p className="text-gray-600 mb-4">Unable to fetch dashboard data</p>
                     <button
                         onClick={handleRefresh}
-                        className="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700"
+                        className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
                     >
                         Try Again
                     </button>
@@ -312,7 +312,7 @@ export default function DashboardPage() {
                     <select
                         value={selectedPeriod}
                         onChange={(e) => handlePeriodChange(e.target.value)}
-                        className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+                        className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                         <option value="today">Today</option>
                         <option value="yesterday">Yesterday</option>
@@ -377,7 +377,7 @@ export default function DashboardPage() {
                 <div className="bg-white rounded-xl border border-gray-200 p-6">
                     <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center space-x-2">
-                            <BarChart3 className="h-5 w-5 text-pink-600" />
+                            <BarChart3 className="h-5 w-5 text-blue-600" />
                             <h3 className="text-lg font-semibold text-gray-900">Sales Trend</h3>
                         </div>
                     </div>
@@ -410,7 +410,7 @@ export default function DashboardPage() {
                 <div className="bg-white rounded-xl border border-gray-200 p-6">
                     <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center space-x-2">
-                            <PieChart className="h-5 w-5 text-pink-600" />
+                            <PieChart className="h-5 w-5 text-blue-600" />
                             <h3 className="text-lg font-semibold text-gray-900">Order Status</h3>
                         </div>
                     </div>
@@ -551,7 +551,7 @@ export default function DashboardPage() {
                                                             </div>
                                                         )}
                                                         {order.loyaltyDiscount > 0 && (
-                                                            <div className="text-pink-600 font-medium">
+                                                            <div className="text-blue-600 font-medium">
                                                                 -৳{order.loyaltyDiscount} (Loyalty)
                                                             </div>
                                                         )}
@@ -615,7 +615,7 @@ export default function DashboardPage() {
                 <div className="bg-white rounded-xl border border-gray-200 p-6">
                     <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center space-x-2">
-                            <Activity className="h-5 w-5 text-pink-600" />
+                            <Activity className="h-5 w-5 text-blue-600" />
                             <h3 className="text-lg font-semibold text-gray-900">Top Products</h3>
                         </div>
                     </div>
@@ -628,7 +628,7 @@ export default function DashboardPage() {
                                         <p className="text-xs text-gray-500">{product.category?.name}</p>
                                     </div>
                                     <div className="text-right">
-                                        <p className="text-sm font-semibold text-pink-600">{formatNumber(product.totalSold || 0)}</p>
+                                        <p className="text-sm font-semibold text-blue-600">{formatNumber(product.totalSold || 0)}</p>
                                         <p className="text-xs text-gray-500">sales</p>
                                     </div>
                                 </div>
@@ -646,7 +646,7 @@ export default function DashboardPage() {
                 <div className="bg-white rounded-xl border border-gray-200 p-6">
                     <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center space-x-2">
-                            <DollarSign className="h-5 w-5 text-pink-600" />
+                            <DollarSign className="h-5 w-5 text-blue-600" />
                             <h3 className="text-lg font-semibold text-gray-900">Payment Methods</h3>
                         </div>
                     </div>
@@ -672,7 +672,7 @@ export default function DashboardPage() {
                 <div className="bg-white rounded-xl border border-gray-200 p-6">
                     <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center space-x-2">
-                            <TrendingUp className="h-5 w-5 text-pink-600" />
+                            <TrendingUp className="h-5 w-5 text-blue-600" />
                             <h3 className="text-lg font-semibold text-gray-900">Quick Stats</h3>
                         </div>
                     </div>

@@ -88,7 +88,7 @@ export default function CustomerSidebar() {
                 {/* Logo - Fixed height */}
                 <div className="flex items-center justify-center h-16 px-6 border-b border-gray-200 flex-shrink-0">
                     <div className="flex items-center space-x-2">
-                        <ShoppingBag className="h-8 w-8 text-pink-600" />
+                        <ShoppingBag className="h-8 w-8 text-blue-600" />
                         <span className="text-xl font-bold text-gray-900">My Account</span>
                     </div>
                 </div>
@@ -106,12 +106,12 @@ export default function CustomerSidebar() {
                                 href={item.href}
                                 onClick={() => setIsMobileOpen(false)}
                                 className={`group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 ${isActive
-                                        ? 'bg-pink-50 text-pink-700 border-r-2 border-pink-600'
+                                        ? 'bg-blue-50 text-blue-700 border-r-2 border-blue-600'
                                         : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                                     }`}
                             >
                                 <item.icon
-                                    className={`mr-3 h-5 w-5 transition-colors ${isActive ? 'text-pink-600' : 'text-gray-400 group-hover:text-gray-500'
+                                    className={`mr-3 h-5 w-5 transition-colors ${isActive ? 'text-blue-600' : 'text-gray-400 group-hover:text-gray-500'
                                         }`}
                                 />
                                 {item.name}

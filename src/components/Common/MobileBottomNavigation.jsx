@@ -69,8 +69,8 @@ export default function MobileBottomNavigation() {
           onClick={handleCategoryClick}
           className={`flex flex-col items-center justify-center px-4 py-2 rounded-lg transition-colors ${
             isCategorySidebarOpen
-              ? 'text-[#EF3D6A]'
-              : 'text-gray-600 hover:text-[#EF3D6A]'
+              ? 'text-[#2563EB]'
+              : 'text-gray-600 hover:text-[#2563EB]'
           }`}
           aria-label="Categories"
         >
@@ -83,8 +83,8 @@ export default function MobileBottomNavigation() {
           href="/"
           className={`flex flex-col items-center justify-center px-4 py-2 rounded-lg transition-colors ${
             isActive('/')
-              ? 'text-[#EF3D6A]'
-              : 'text-gray-600 hover:text-[#EF3D6A]'
+              ? 'text-[#2563EB]'
+              : 'text-gray-600 hover:text-[#2563EB]'
           }`}
           aria-label="Home"
         >
@@ -97,15 +97,15 @@ export default function MobileBottomNavigation() {
           onClick={handleCartClick}
           className={`flex flex-col items-center justify-center px-4 py-2 rounded-lg transition-colors relative ${
             isCartOpen
-              ? 'text-[#EF3D6A]'
-              : 'text-gray-600 hover:text-[#EF3D6A]'
+              ? 'text-[#2563EB]'
+              : 'text-gray-600 hover:text-[#2563EB]'
           }`}
           aria-label="Shopping Cart"
         >
           <div className="relative">
             <ShoppingCart className="w-6 h-6 mb-1" />
             {cartCount > 0 && (
-              <span className="absolute -top-1 -right-1 bg-[#EF3D6A] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+              <span className="absolute -top-1 -right-1 bg-[#2563EB] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                 {cartCount > 9 ? '9+' : cartCount}
               </span>
             )}
@@ -118,8 +118,8 @@ export default function MobileBottomNavigation() {
           onClick={handleProfileClick}
           className={`flex flex-col items-center justify-center px-4 py-2 rounded-lg transition-colors ${
             isActive('/dashboard')
-              ? 'text-[#EF3D6A]'
-              : 'text-gray-600 hover:text-[#EF3D6A]'
+              ? 'text-[#2563EB]'
+              : 'text-gray-600 hover:text-[#2563EB]'
           }`}
           aria-label={user ? 'Profile' : 'Login'}
         >

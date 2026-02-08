@@ -72,7 +72,7 @@ export default function OfferBanner() {
                 {/* Check if it's promo code type - no link needed */}
                 {banner.type === 'promo' ? (
                     <div className="relative overflow-hidden rounded-lg">
-                        <div className="flex flex-col lg:flex-row items-center min-h-[400px] bg-gradient-to-r from-pink-50 to-purple-50">
+                        <div className="flex flex-col lg:flex-row items-center min-h-[400px] bg-gradient-to-r from-blue-50 to-purple-50">
                             {/* Left Side - Image */}
                             <div className="w-full lg:w-1/2 relative h-[300px] lg:h-[400px]">
                                 <Image
@@ -88,7 +88,7 @@ export default function OfferBanner() {
                             {/* Right Side - Content */}
                             <div className="w-full lg:w-1/2 p-6 lg:p-12">
                                 <div className="max-w-md mx-auto lg:mx-0">
-                                    <p className="text-sm lg:text-base mb-2 text-pink-600">
+                                    <p className="text-sm lg:text-base mb-2 text-blue-600">
                                         {banner.subtitle}
                                     </p>
 
@@ -99,7 +99,7 @@ export default function OfferBanner() {
                                     {/* Promo Code */}
                                     <div className="py-4">
                                         <p className="text-base text-gray-600 mb-2">Use promo code</p>
-                                        <div className="inline-block px-0 py-2 rounded-lg text-xl lg:text-3xl font-bold text-pink-600">
+                                        <div className="inline-block px-0 py-2 rounded-lg text-xl lg:text-3xl font-bold text-blue-600">
                                             {banner.discountText || `${banner.discountPercentage}% OFF`}
                                         </div>
                                     </div>
@@ -111,7 +111,7 @@ export default function OfferBanner() {
                     /* Offer type - with link */
                     <Link href={banner.buttonLink || '#'}>
                         <div className="relative overflow-hidden rounded-lg">
-                            <div className="flex flex-col lg:flex-row items-center min-h-[400px] bg-gradient-to-r from-pink-50 to-purple-50">
+                            <div className="flex flex-col lg:flex-row items-center min-h-[400px] bg-gradient-to-r from-blue-50 to-purple-50">
                                 {/* Left Side - Image */}
                                 <div className="w-full lg:w-1/2 relative h-[300px] lg:h-[400px]">
                                     <Image
@@ -127,7 +127,7 @@ export default function OfferBanner() {
                                 {/* Right Side - Content */}
                                 <div className="w-full lg:w-1/2 p-6 lg:p-12">
                                     <div className="max-w-md mx-auto lg:mx-0">
-                                        <p className="text-sm lg:text-base mb-2 text-pink-600">
+                                        <p className="text-sm lg:text-base mb-2 text-blue-600">
                                             {banner.subtitle}
                                         </p>
 
@@ -137,7 +137,7 @@ export default function OfferBanner() {
 
                                         {/* Button */}
                                         <div className="mt-6">
-                                            <div className="inline-block px-8 py-3 rounded-lg text-lg font-semibold bg-pink-500 text-white transition-all hover:opacity-90">
+                                            <div className="inline-block px-8 py-3 rounded-lg text-lg font-semibold bg-blue-500 text-white transition-all hover:opacity-90">
                                                 {banner.buttonText}
                                             </div>
                                         </div>

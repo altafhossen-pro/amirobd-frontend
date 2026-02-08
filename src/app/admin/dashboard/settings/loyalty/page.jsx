@@ -168,7 +168,7 @@ export default function LoyaltySettingsPage() {
   if (checkingPermission || contextLoading || loading) {
     return (
       <div className="flex items-center justify-center h-64">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-pink-500"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
       </div>
     );
   }
@@ -198,7 +198,7 @@ export default function LoyaltySettingsPage() {
               <span>Back</span>
             </button>
             <div className="flex items-center space-x-3">
-              <Coins className="h-8 w-8 text-pink-500" />
+              <Coins className="h-8 w-8 text-blue-500" />
               <div>
                 <h1 className="text-3xl font-bold text-gray-900">Loyalty Settings</h1>
                 <p className="text-gray-600">Configure coins, points and rewards system</p>
@@ -209,7 +209,7 @@ export default function LoyaltySettingsPage() {
             <button
               onClick={handleSave}
               disabled={saving || !hasUpdatePermission}
-              className="flex items-center space-x-2 px-6 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 disabled:opacity-50"
+              className="flex items-center space-x-2 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50"
             >
               <Save className="h-4 w-4" />
               <span>{saving ? 'Saving...' : 'Save Settings'}</span>
@@ -233,7 +233,7 @@ export default function LoyaltySettingsPage() {
           {/* Loyalty System Settings */}
           <div className="bg-white rounded-xl shadow-lg p-6">
             <h2 className="text-xl font-semibold text-gray-900 mb-6 flex items-center space-x-2">
-              <Coins className="h-5 w-5 text-pink-500" />
+              <Coins className="h-5 w-5 text-blue-500" />
               <span>Loyalty System</span>
             </h2>
 
@@ -250,7 +250,7 @@ export default function LoyaltySettingsPage() {
                     value={settings.coinPerItem}
                     onChange={(e) => handleInputChange('coinPerItem', e.target.value)}
                     onWheel={handleWheel}
-                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent ${
+                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
                       errors.coinPerItem ? 'border-red-300 bg-red-50' : 'border-gray-300'
                     }`}
                   />
@@ -275,7 +275,7 @@ export default function LoyaltySettingsPage() {
                     value={settings.coinValue}
                     onChange={(e) => handleInputChange('coinValue', e.target.value)}
                     onWheel={handleWheel}
-                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent ${
+                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
                       errors.coinValue ? 'border-red-300 bg-red-50' : 'border-gray-300'
                     }`}
                   />
@@ -293,7 +293,7 @@ export default function LoyaltySettingsPage() {
           {/* Earning Rules */}
           <div className="bg-white rounded-xl shadow-lg p-6">
             <h2 className="text-xl font-semibold text-gray-900 mb-6 flex items-center space-x-2">
-              <DollarSign className="h-5 w-5 text-pink-500" />
+              <DollarSign className="h-5 w-5 text-blue-500" />
               <span>Earning Rules</span>
             </h2>
 
@@ -319,7 +319,7 @@ export default function LoyaltySettingsPage() {
           {/* Redemption Rules */}
           <div className="bg-white rounded-xl shadow-lg p-6">
             <h2 className="text-xl font-semibold text-gray-900 mb-6 flex items-center space-x-2">
-              <Percent className="h-5 w-5 text-pink-500" />
+              <Percent className="h-5 w-5 text-blue-500" />
               <span>Redemption Rules</span>
             </h2>
 
@@ -336,7 +336,7 @@ export default function LoyaltySettingsPage() {
                     value={settings.minRedeemAmount}
                     onChange={(e) => handleInputChange('minRedeemAmount', e.target.value)}
                     onWheel={handleWheel}
-                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent ${
+                    className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
                       errors.minRedeemAmount ? 'border-red-300 bg-red-50' : 'border-gray-300'
                     }`}
                   />
@@ -353,7 +353,7 @@ export default function LoyaltySettingsPage() {
           </div>
 
           {/* Summary */}
-          <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl shadow-lg p-6">
+          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl shadow-lg p-6">
             <h2 className="text-xl font-semibold text-gray-900 mb-6">Current Settings Summary</h2>
             
             <div className="space-y-4">

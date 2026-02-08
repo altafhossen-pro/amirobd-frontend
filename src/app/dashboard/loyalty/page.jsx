@@ -77,7 +77,7 @@ const LoyaltyPageContent = () => {
             case 'earn':
                 return <TrendingUp className="h-5 w-5 text-green-600" />
             case 'redeem':
-                return <Gift className="h-5 w-5 text-pink-600" />
+                return <Gift className="h-5 w-5 text-blue-600" />
             case 'topup':
                 return <TrendingUp className="h-5 w-5 text-green-600" />
             case 'adjust':
@@ -92,7 +92,7 @@ const LoyaltyPageContent = () => {
             case 'earn':
                 return 'text-green-600 bg-green-50 border-green-200'
             case 'redeem':
-                return 'text-pink-600 bg-pink-50 border-pink-200'
+                return 'text-blue-600 bg-blue-50 border-blue-200'
             case 'topup':
                 return 'text-green-600 bg-green-50 border-green-200'
             case 'adjust':
@@ -126,7 +126,7 @@ const LoyaltyPageContent = () => {
         return (
             <div className="min-h-screen bg-gray-50 flex items-center justify-center">
                 <div className="flex flex-col items-center space-y-4">
-                    <div className="animate-spin rounded-full h-12 w-12 border-4 border-pink-500 border-t-transparent"></div>
+                    <div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent"></div>
                     <p className="text-gray-600 font-medium">Loading loyalty data...</p>
                 </div>
             </div>
@@ -139,7 +139,7 @@ const LoyaltyPageContent = () => {
                 {/* Header */}
                 <div className="mb-8">
                     <div className="flex items-center space-x-3 mb-2">
-                        <Coins className="h-8 w-8 text-pink-600" />
+                        <Coins className="h-8 w-8 text-blue-600" />
                         <h1 className="text-3xl font-bold text-gray-900">Loyalty Points</h1>
                     </div>
                     <p className="text-gray-600">Track your coins, value, and transaction history</p>
@@ -153,7 +153,7 @@ const LoyaltyPageContent = () => {
                                 onClick={() => setActiveTab('overview')}
                                 className={`py-2 px-1 border-b-2 font-medium text-sm ${
                                     activeTab === 'overview'
-                                        ? 'border-pink-500 text-pink-600'
+                                        ? 'border-blue-500 text-blue-600'
                                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                                 }`}
                             >
@@ -163,7 +163,7 @@ const LoyaltyPageContent = () => {
                                 onClick={() => setActiveTab('history')}
                                 className={`py-2 px-1 border-b-2 font-medium text-sm ${
                                     activeTab === 'history'
-                                        ? 'border-pink-500 text-pink-600'
+                                        ? 'border-blue-500 text-blue-600'
                                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                                 }`}
                             >
@@ -181,8 +181,8 @@ const LoyaltyPageContent = () => {
                             {/* Total Coins */}
                             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
                                 <div className="flex items-center">
-                                    <div className="p-3 bg-pink-100 rounded-xl">
-                                        <Coins className="h-6 w-6 text-pink-600" />
+                                    <div className="p-3 bg-blue-100 rounded-xl">
+                                        <Coins className="h-6 w-6 text-blue-600" />
                                     </div>
                                     <div className="ml-4">
                                         <p className="text-sm font-medium text-gray-600">Total Coins</p>
@@ -227,7 +227,7 @@ const LoyaltyPageContent = () => {
                         {/* How to Earn Coins */}
                         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
                             <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                                <Gift className="h-5 w-5 mr-2 text-pink-600" />
+                                <Gift className="h-5 w-5 mr-2 text-blue-600" />
                                 How to Earn Coins
                             </h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -266,13 +266,13 @@ const LoyaltyPageContent = () => {
                         </div>
 
                         {/* Usage Info */}
-                        <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl border border-pink-200 p-6">
+                        <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200 p-6">
                             <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                                <Coins className="h-5 w-5 mr-2 text-pink-600" />
+                                <Coins className="h-5 w-5 mr-2 text-blue-600" />
                                 How to Use Coins
                             </h3>
                             <div className="flex items-start space-x-3">
-                                <Gift className="h-5 w-5 text-pink-600 mt-0.5" />
+                                <Gift className="h-5 w-5 text-blue-600 mt-0.5" />
                                 <div>
                                     <h4 className="font-medium text-gray-800">Pay with Coins</h4>
                                     <p className="text-sm text-gray-600">
@@ -290,7 +290,7 @@ const LoyaltyPageContent = () => {
                     <div className="bg-white rounded-xl shadow-sm border border-gray-200">
                         <div className="px-6 py-4 border-b border-gray-200">
                             <h3 className="text-lg font-semibold text-gray-900 flex items-center">
-                                <History className="h-5 w-5 mr-2 text-pink-600" />
+                                <History className="h-5 w-5 mr-2 text-blue-600" />
                                 Transaction History
                             </h3>
                         </div>
@@ -328,7 +328,7 @@ const LoyaltyPageContent = () => {
                                                 <div className="text-right">
                                                     <p className={`font-semibold ${
                                                         transaction.type === 'earn' ? 'text-green-600' : 
-                                                        transaction.type === 'redeem' ? 'text-pink-600' : 
+                                                        transaction.type === 'redeem' ? 'text-blue-600' : 
                                                         transaction.type === 'topup' ? 'text-green-600' :
                                                         'text-blue-600'
                                                     }`}>
@@ -371,7 +371,7 @@ export default dynamic(() => Promise.resolve(LoyaltyPageContent), {
     loading: () => (
         <div className="min-h-screen bg-gray-50 flex items-center justify-center">
             <div className="text-center">
-                <div className="h-12 w-12 border-4 border-pink-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                <div className="h-12 w-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
                 <p className="text-gray-600">Loading loyalty page...</p>
             </div>
         </div>

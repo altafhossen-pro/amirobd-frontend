@@ -180,7 +180,7 @@ export default function UpsellsPage() {
                         placeholder="Search products..."
                         value={searchQuery}
                         onChange={handleSearch}
-                        className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                        className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     />
                 </div>
             </div>
@@ -189,7 +189,7 @@ export default function UpsellsPage() {
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
                 {loading ? (
                     <div className="p-8 text-center">
-                        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-pink-500 mx-auto"></div>
+                        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto"></div>
                         <p className="mt-2 text-gray-500">Loading products...</p>
                     </div>
                 ) : products.length === 0 ? (
@@ -269,7 +269,7 @@ export default function UpsellsPage() {
                                             <div className="flex items-center justify-end space-x-2">
                                                 <button
                                                     onClick={() => handleViewUpsellDetails(product)}
-                                                    className="text-pink-600 hover:text-pink-900 p-1"
+                                                    className="text-blue-600 hover:text-blue-900 p-1"
                                                     title="View Upsell Details"
                                                 >
                                                     <ExternalLink className="w-4 h-4" />

@@ -16,13 +16,13 @@ function CategoryCard({ category, isActive = false, onCategoryClick }) {
         <div 
             className={`relative  rounded-xl border transition-all duration-300 cursor-pointer hover:shadow-lg ${
                 isActive 
-                    ? 'bg-pink-500 border-pink-500 text-white' 
-                    : 'bg-white border-pink-100 text-gray-700 hover:border-pink-200'
+                    ? 'bg-blue-500 border-blue-500 text-white' 
+                    : 'bg-white border-blue-100 text-gray-700 hover:border-blue-200'
             }`}
             onClick={() => onCategoryClick(category)}
         >
             <div className="flex flex-col   space-y-3">
-                <div className={` ${isActive ? 'text-white' : 'text-pink-500'}`}>
+                <div className={` ${isActive ? 'text-white' : 'text-blue-500'}`}>
                     {category.image ? (
                         <div className="w-full aspect-[15/11] rounded-xl overflow-hidden bg-gray-100 flex items-center justify-center">
                             <Image
@@ -103,7 +103,7 @@ export default function CategorySlider() {
                         <h2 className="text-2xl font-bold text-gray-800">Browse Category</h2>
                     </div>
                     <div className="flex justify-center items-center h-32">
-                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500"></div>
+                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
                     </div>
                 </div>
             </section>
@@ -150,7 +150,7 @@ export default function CategorySlider() {
                     {/* Navigation Buttons */}
                     <div className="flex gap-2">
                         <button 
-                            className="category-prev-btn w-10 h-10 rounded-lg border border-pink-300 text-pink-500 hover:bg-pink-50 transition-colors flex items-center justify-center"
+                            className="category-prev-btn w-10 h-10 rounded-lg border border-blue-300 text-blue-500 hover:bg-blue-50 transition-colors flex items-center justify-center"
                             aria-label="Previous categories"
                         >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -158,7 +158,7 @@ export default function CategorySlider() {
                             </svg>
                         </button>
                         <button 
-                            className="category-next-btn w-10 h-10 rounded-lg border border-pink-300 text-pink-500 hover:bg-pink-50 transition-colors flex items-center justify-center"
+                            className="category-next-btn w-10 h-10 rounded-lg border border-blue-300 text-blue-500 hover:bg-blue-50 transition-colors flex items-center justify-center"
                             aria-label="Next categories"
                         >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

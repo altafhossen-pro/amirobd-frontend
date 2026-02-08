@@ -78,7 +78,7 @@ export default function Footer() {
     fetchFooterMenus();
   }, []);
   return (
-    <footer className=" text-black bg-gradient-to-r from-pink-100  to-purple-100" >
+    <footer className=" text-black bg-gradient-to-r from-blue-100  to-purple-100" >
       {/* Main Footer Content */}
       <div className="max-w-screen-2xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -136,7 +136,7 @@ export default function Footer() {
                     <Link
                       key={index}
                       href={social.href}
-                      className="text-black hover:text-pink-400 transition-colors duration-300"
+                      className="text-black hover:text-blue-400 transition-colors duration-300"
                       aria-label={social.name || social.label}
                     >
                       {getSocialIcon(social)}
@@ -200,7 +200,7 @@ export default function Footer() {
                     <Link
                       href={utility.href}
                       target={utility.target || '_self'}
-                      className="text-gray-600 text-sm transition-colors duration-300 hover:text-pink-600"
+                      className="text-gray-600 text-sm transition-colors duration-300 hover:text-blue-600"
                     >
                       {utility.name}
                     </Link>
@@ -279,7 +279,7 @@ export default function Footer() {
                             href={getContactLink(contact)}
                             target={contact.contactType === 'address' ? '_blank' : '_self'}
                             rel={contact.contactType === 'address' ? 'noopener noreferrer' : ''}
-                            className={`text-gray-600 text-sm hover:text-pink-600 transition-colors duration-300 ${contact.contactType === 'address' ? 'leading-relaxed' : ''}`}
+                            className={`text-gray-600 text-sm hover:text-blue-600 transition-colors duration-300 ${contact.contactType === 'address' ? 'leading-relaxed' : ''}`}
                           >
                             {getContactText(contact)}
                           </a>
@@ -301,7 +301,7 @@ export default function Footer() {
                         href={`https://www.google.com/maps?q=${encodeURIComponent(footerData.contact?.address || '230 Park Avenue, Suite 210, New York, NY 10169, USA')}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-900 text-sm leading-relaxed hover:text-pink-400 transition-colors duration-300"
+                        className="text-gray-900 text-sm leading-relaxed hover:text-blue-400 transition-colors duration-300"
                       >
                         {footerData.contact?.address || '230 Park Avenue, Suite 210, New York, NY 10169, USA'}
                       </a>
@@ -312,7 +312,7 @@ export default function Footer() {
                       <Phone className="w-4 h-4 text-gray-900 flex-shrink-0" />
                       <a
                         href={`tel:${footerData.contact?.phone || '+8801XXXXXXXXX'}`}
-                        className="text-gray-900 text-sm hover:text-pink-400 transition-colors duration-300"
+                        className="text-gray-900 text-sm hover:text-blue-400 transition-colors duration-300"
                       >
                         Phone: {footerData.contact?.phone || '+8801XXXXXXXXX'}
                       </a>
@@ -323,7 +323,7 @@ export default function Footer() {
                       <Mail className="w-4 h-4 text-gray-900 flex-shrink-0" />
                       <a
                         href={`mailto:${footerData.contact?.email || 'amiro@gmail.com'}`}
-                        className="text-gray-900 text-sm hover:text-pink-400 transition-colors duration-300"
+                        className="text-gray-900 text-sm hover:text-blue-400 transition-colors duration-300"
                       >
                         Email: {footerData.contact?.email || 'amiro@gmail.com'}
                       </a>
@@ -345,11 +345,11 @@ export default function Footer() {
       </div>
 
       {/* Copyright Section */}
-      <div className="border-t border-pink-400/30">
+      <div className="border-t border-blue-400/30">
         <div className="max-w-screen-2xl mx-auto px-4 py-6">
           <div className="text-center">
             <p className="text-gray-900 text-sm">
-              ©2025 Amiro. All rights reserved. Developed by <span className="text-pink-400 font-semibold hover:text-pink-500 transition-colors duration-300">Amiro</span>
+              ©2025 Amiro. All rights reserved. Developed by <span className="text-blue-400 font-semibold hover:text-blue-500 transition-colors duration-300">Amiro</span>
             </p>
           </div>
         </div>

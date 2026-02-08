@@ -450,7 +450,7 @@ export default function AdminProductsPage() {
                                                         setProductToShare(product)
                                                         setShowShareModal(true)
                                                     }}
-                                                    className="text-pink-600 hover:text-pink-900 p-1 cursor-pointer"
+                                                    className="text-blue-600 hover:text-blue-900 p-1 cursor-pointer"
                                                     title="Share"
                                                 >
                                                     <Share2 className="h-4 w-4" />

@@ -291,7 +291,7 @@ export default function OfferBannerPage() {
     if (loading) {
         return (
             <div className="flex items-center justify-center h-64">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-600"></div>
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
             </div>
         );
     }
@@ -302,7 +302,7 @@ export default function OfferBannerPage() {
                 <h1 className="text-2xl font-bold text-gray-900">Offer Banners</h1>
                 <button
                     onClick={handleAddNew}
-                    className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors flex items-center gap-2"
+                    className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors flex items-center gap-2"
                 >
                     <Plus className="w-5 h-5" />
                     Add New Banner
@@ -316,7 +316,7 @@ export default function OfferBannerPage() {
                     <p className="text-gray-500 mb-6">Create your first offer banner to get started</p>
                     <button
                         onClick={handleAddNew}
-                        className="bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition-colors"
+                        className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors"
                     >
                         Create Banner
                     </button>
@@ -424,7 +424,7 @@ export default function OfferBannerPage() {
                                             value={formData.type}
                                             onChange={handleInputChange}
                                             required
-                                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         >
                                             <option value="offer">Offer Text (with button)</option>
                                             <option value="promo">Promo Code (no button)</option>
@@ -441,7 +441,7 @@ export default function OfferBannerPage() {
                                             value={formData.title}
                                             onChange={handleInputChange}
                                             required
-                                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                             placeholder={formData.type === 'offer' ? "e.g., 50% Discount" : "e.g., Special Offer"}
                                         />
                                     </div>
@@ -456,7 +456,7 @@ export default function OfferBannerPage() {
                                             value={formData.subtitle}
                                             onChange={handleInputChange}
                                             required
-                                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                             placeholder="e.g., Only for the first order"
                                         />
                                     </div>
@@ -509,7 +509,7 @@ export default function OfferBannerPage() {
                                                         type="button"
                                                         onClick={handleImageUpload}
                                                         disabled={uploading}
-                                                        className="flex items-center gap-2 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                                                        className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                                                     >
                                                         {uploading ? (
                                                             <>
@@ -560,7 +560,7 @@ export default function OfferBannerPage() {
                                                     value={formData.buttonText}
                                                     onChange={handleInputChange}
                                                     required
-                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                     placeholder="e.g., Shop Now"
                                                 />
                                             </div>
@@ -575,7 +575,7 @@ export default function OfferBannerPage() {
                                                     value={formData.buttonLink}
                                                     onChange={handleInputChange}
                                                     required
-                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                     placeholder="e.g., /shop or https://example.com"
                                                 />
                                             </div>
@@ -593,7 +593,7 @@ export default function OfferBannerPage() {
                                                     onChange={handleInputChange}
                                                     min="0"
                                                     max="100"
-                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                     placeholder="50"
                                                 />
                                             </div>
@@ -607,7 +607,7 @@ export default function OfferBannerPage() {
                                                     value={formData.discountText}
                                                     onChange={handleInputChange}
                                                     required
-                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                     placeholder="PINKFAST50"
                                                 />
                                             </div>
@@ -621,7 +621,7 @@ export default function OfferBannerPage() {
                                                 name="isActive"
                                                 checked={formData.isActive}
                                                 onChange={handleInputChange}
-                                                className="w-4 h-4 text-pink-600 border-gray-300 rounded focus:ring-pink-500"
+                                                className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
                                             />
                                             <span className="ml-2 text-sm text-gray-700">Active Banner</span>
                                         </label>
@@ -639,7 +639,7 @@ export default function OfferBannerPage() {
                                 </button>
                                 <button
                                     type="submit"
-                                    className="px-6 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors"
+                                    className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
                                 >
                                     {editingBanner ? 'Update Banner' : 'Create Banner'}
                                 </button>

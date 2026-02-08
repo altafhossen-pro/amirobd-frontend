@@ -56,7 +56,7 @@ export default function CategoriesPage() {
             <div className="min-h-screen bg-gray-50">
                 <div className="max-w-screen-2xl mx-auto px-4 py-8">
                     <div className="flex justify-center items-center py-12">
-                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500"></div>
+                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@ export default function CategoriesPage() {
                             className="group bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer overflow-hidden transform hover:-translate-y-1 border border-gray-100"
                         >
                             {/* Category Image */}
-                            <div className="relative h-32 sm:h-36 bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 overflow-hidden">
+                            <div className="relative h-32 sm:h-36 bg-gradient-to-br from-blue-50 via-purple-50 to-blue-50 overflow-hidden">
                                 {category.image ? (
                                     <img
                                         src={category.image}
@@ -104,7 +104,7 @@ export default function CategoriesPage() {
                                     />
                                 ) : (
                                     <div className="w-full h-full flex items-center justify-center">
-                                        <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
+                                        <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center">
                                             <span className="text-white text-lg font-bold">
                                                 {category.name.charAt(0).toUpperCase()}
                                             </span>
@@ -126,13 +126,13 @@ export default function CategoriesPage() {
                             {/* Category Info */}
                             <div className="p-3 sm:p-4">
                                 <div className="text-center">
-                                    <h3 className="text-sm sm:text-base font-semibold text-gray-900 group-hover:text-pink-600 transition-colors duration-300 line-clamp-2 mb-1">
+                                    <h3 className="text-sm sm:text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300 line-clamp-2 mb-1">
                                         {category.name}
                                     </h3>
                                     
                                     {/* Explore Button */}
                                     <div className="mt-2">
-                                        <span className="inline-flex items-center text-xs text-pink-600 font-medium group-hover:text-pink-700 transition-colors duration-300">
+                                        <span className="inline-flex items-center text-xs text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300">
                                             Explore
                                             <ChevronRight className="w-3 h-3 ml-1 group-hover:translate-x-0.5 transition-transform duration-300" />
                                         </span>

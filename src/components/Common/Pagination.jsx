@@ -58,7 +58,7 @@ const Pagination = ({
                     className={`p-2 rounded-md transition-colors ${
                         currentPage === 1
                             ? 'text-gray-400 cursor-not-allowed'
-                            : 'text-gray-600 hover:text-pink-600 hover:bg-pink-50'
+                            : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
                     }`}
                 >
                     <ChevronLeft className="w-4 h-4" />
@@ -71,8 +71,8 @@ const Pagination = ({
                         onClick={() => onPageChange(page)}
                         className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                             page === currentPage
-                                ? 'bg-pink-600 text-white'
-                                : 'text-gray-600 hover:text-pink-600 hover:bg-pink-50'
+                                ? 'bg-blue-600 text-white'
+                                : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
                         }`}
                     >
                         {page}
@@ -86,7 +86,7 @@ const Pagination = ({
                     className={`p-2 rounded-md transition-colors ${
                         currentPage === totalPages
                             ? 'text-gray-400 cursor-not-allowed'
-                            : 'text-gray-600 hover:text-pink-600 hover:bg-pink-50'
+                            : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
                     }`}
                 >
                     <ChevronRight className="w-4 h-4" />

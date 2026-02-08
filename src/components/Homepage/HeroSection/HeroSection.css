@@ -81,7 +81,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #ec4899 !important; /* pink-500 */
+  background-color: #ec4899 !important; /* blue-500 */
   width: 16px !important;
   height: 6px !important;
   border-radius: 3px !important;

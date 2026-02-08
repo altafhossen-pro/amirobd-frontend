@@ -271,7 +271,7 @@ function LoginPage() {
                             onClick={() => setActiveTab('email')}
                             className={`flex-1 flex items-center justify-center py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                                 activeTab === 'email'
-                                    ? 'bg-white text-pink-600 shadow-sm'
+                                    ? 'bg-white text-blue-600 shadow-sm'
                                     : 'text-gray-600 hover:text-gray-900'
                             }`}
                         >
@@ -282,7 +282,7 @@ function LoginPage() {
                             onClick={() => setActiveTab('phone')}
                             className={`flex-1 flex items-center justify-center py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                                 activeTab === 'phone'
-                                    ? 'bg-white text-pink-600 shadow-sm'
+                                    ? 'bg-white text-blue-600 shadow-sm'
                                     : 'text-gray-600 hover:text-gray-900'
                             }`}
                         >
@@ -293,7 +293,7 @@ function LoginPage() {
                             onClick={() => setActiveTab('social')}
                             className={`flex-1 flex items-center justify-center py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                                 activeTab === 'social'
-                                    ? 'bg-white text-pink-600 shadow-sm'
+                                    ? 'bg-white text-blue-600 shadow-sm'
                                     : 'text-gray-600 hover:text-gray-900'
                             }`}
                         >
@@ -323,7 +323,7 @@ function LoginPage() {
                                         required
                                         value={loginForm.email}
                                         onChange={handleLoginChange}
-                                        className="block w-full pl-12 pr-4 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-200 bg-gray-50 focus:bg-white"
+                                        className="block w-full pl-12 pr-4 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 bg-gray-50 focus:bg-white"
                                         placeholder="Enter your email address"
                                     />
                                 </div>
@@ -345,7 +345,7 @@ function LoginPage() {
                                         required
                                         value={loginForm.password}
                                         onChange={handleLoginChange}
-                                        className="block w-full pl-12 pr-12 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-200 bg-gray-50 focus:bg-white"
+                                        className="block w-full pl-12 pr-12 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 bg-gray-50 focus:bg-white"
                                         placeholder="Enter your password"
                                     />
                                     <button
@@ -368,7 +368,7 @@ function LoginPage() {
                                         id="remember-me"
                                         name="remember-me"
                                         type="checkbox"
-                                        className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
+                                        className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                                     />
                                     <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-700">
                                         Remember me
@@ -376,7 +376,7 @@ function LoginPage() {
                                 </div>
 
                                 <div className="text-sm">
-                                    <Link href="/forgot-password" className="font-medium text-pink-600 hover:text-pink-500">
+                                    <Link href="/forgot-password" className="font-medium text-blue-600 hover:text-blue-500">
                                         Forgot password?
                                     </Link>
                                 </div>
@@ -385,7 +385,7 @@ function LoginPage() {
                             <button
                                 type="submit"
                                 disabled={loading}
-                                className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
+                                className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
                             >
                                 {loading ? (
                                     <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
@@ -420,10 +420,10 @@ function LoginPage() {
                                         value={loginForm.phone}
                                         onChange={handleLoginChange}
                                         maxLength={11}
-                                        className={`block w-full pl-12 pr-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-200 bg-gray-50 focus:bg-white ${
+                                        className={`block w-full pl-12 pr-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 bg-gray-50 focus:bg-white ${
                                             phoneError 
                                                 ? 'border-red-500 focus:border-red-500' 
-                                                : 'border-gray-400 focus:border-pink-500'
+                                                : 'border-gray-400 focus:border-blue-500'
                                         }`}
                                         placeholder="01XXXXXXXXX (11 digits)"
                                     />
@@ -461,7 +461,7 @@ function LoginPage() {
                                             required
                                             value={loginForm.otp}
                                             onChange={handleLoginChange}
-                                            className="block w-full pl-12 pr-4 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-200 bg-gray-50 focus:bg-white text-center text-lg tracking-widest"
+                                            className="block w-full pl-12 pr-4 py-3 border border-gray-400 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 bg-gray-50 focus:bg-white text-center text-lg tracking-widest"
                                             placeholder="000000"
                                         />
                                     </div>
@@ -476,7 +476,7 @@ function LoginPage() {
                                     type="button"
                                     onClick={handleSendOTP}
                                     disabled={loading || !isValidPhone()}
-                                    className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
+                                    className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
                                 >
                                     {loading ? (
                                         <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
@@ -493,7 +493,7 @@ function LoginPage() {
                                         type="button"
                                         onClick={handleVerifyOTP}
                                         disabled={loading || !loginForm.otp}
-                                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
+                                        className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
                                     >
                                         {loading ? (
                                             <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
@@ -510,7 +510,7 @@ function LoginPage() {
                                             type="button"
                                             onClick={handleSendOTP}
                                             disabled={loading}
-                                            className="flex-1 text-sm text-pink-600 hover:text-pink-700 font-medium disabled:opacity-50"
+                                            className="flex-1 text-sm text-blue-600 hover:text-blue-700 font-medium disabled:opacity-50"
                                         >
                                             Resend OTP
                                         </button>
@@ -522,7 +522,7 @@ function LoginPage() {
                                                 setPhoneError('')
                                                 setLoginForm(prev => ({ ...prev, otp: '', phone: '' }))
                                             }}
-                                            className="flex-1 text-sm text-pink-600 hover:text-pink-700 font-medium"
+                                            className="flex-1 text-sm text-blue-600 hover:text-blue-700 font-medium"
                                         >
                                             Change phone number
                                         </button>
@@ -549,7 +549,7 @@ function LoginPage() {
                             className="text-sm text-gray-600 hover:text-gray-900 flex items-center justify-center mx-auto group"
                         >
                             <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-                            Don't have an account? <span className="text-pink-600 hover:text-pink-700 font-medium ms-2">Sign up</span>
+                            Don't have an account? <span className="text-blue-600 hover:text-blue-700 font-medium ms-2">Sign up</span>
                         </Link>
                     </div>
 
@@ -568,7 +568,7 @@ function LoginPage() {
 // Wrapper component with Suspense boundary
 export default function LoginPageWithSuspense() {
     return (
-        <Suspense fallback={<div className="min-h-screen bg-gray-50 flex items-center justify-center"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-pink-500"></div></div>}>
+        <Suspense fallback={<div className="min-h-screen bg-gray-50 flex items-center justify-center"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div></div>}>
             <LoginPage />
         </Suspense>
     );

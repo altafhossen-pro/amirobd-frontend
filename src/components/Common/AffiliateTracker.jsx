@@ -251,12 +251,12 @@ export default function AffiliateTracker() {
 
               {/* Message */}
               <p className="text-gray-600 mb-4">
-                This link is valid for <span className="font-semibold text-pink-600">15 minutes</span>.
+                This link is valid for <span className="font-semibold text-blue-600">15 minutes</span>.
               </p>
 
               {/* CTA */}
-              <div className="flex items-center justify-center gap-2 bg-pink-50 rounded-lg p-3 mb-4">
-                <Gift className="h-5 w-5 text-pink-600" />
+              <div className="flex items-center justify-center gap-2 bg-blue-50 rounded-lg p-3 mb-4">
+                <Gift className="h-5 w-5 text-blue-600" />
                 <p className="text-sm text-gray-700">
                   <span className="font-semibold">Purchase and enjoy</span> discount or rewards!
                 </p>
@@ -265,7 +265,7 @@ export default function AffiliateTracker() {
               {/* Close Button */}
               <button
                 onClick={() => setShowModal(false)}
-                className="w-full px-4 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors font-medium cursor-pointer"
+                className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium cursor-pointer"
               >
                 Got it!
               </button>

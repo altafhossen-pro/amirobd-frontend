@@ -1185,7 +1185,7 @@ export default function Checkout() {
         return (
             <div className="min-h-screen bg-gray-50 flex items-center justify-center">
                 <div className="text-center">
-                    <div className="w-16 h-16 border-4 border-pink-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                    <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
                     <h2 className="text-xl font-semibold text-gray-900 mb-2">Checking Authentication</h2>
                     <p className="text-gray-600">Please wait while we verify your login status...</p>
                 </div>
@@ -1222,7 +1222,7 @@ export default function Checkout() {
                                         onChange={handleInputChange}
                                         placeholder="Enter your full name here"
                                         autoComplete="name"
-                                        className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-pink-500 focus:border-pink-500"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                                     />
                                 </div>
 
@@ -1238,7 +1238,7 @@ export default function Checkout() {
                                         onChange={handleInputChange}
                                         placeholder="Enter your mobile number here"
                                         autoComplete="tel"
-                                        className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-pink-500 focus:border-pink-500"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                                     />
                                 </div>
                             </div>
@@ -1255,7 +1255,7 @@ export default function Checkout() {
                                             name="division"
                                             value={formData.division}
                                             onChange={handleInputChange}
-                                            className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-pink-500 focus:border-pink-500"
+                                            className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                                             disabled={divisionsLoading}
                                         >
                                             <option value="">
@@ -1279,7 +1279,7 @@ export default function Checkout() {
                                                 name="district"
                                                 value={formData.district}
                                                 onChange={handleInputChange}
-                                                className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-pink-500 focus:border-pink-500"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                                                 disabled={districtsLoading}
                                             >
                                                 <option value="">
@@ -1310,7 +1310,7 @@ export default function Checkout() {
                                                         name="upazila"
                                                         value={formData.upazila}
                                                         onChange={handleInputChange}
-                                                        className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-pink-500 focus:border-pink-500"
+                                                        className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                                                         disabled={upazilasLoading}
                                                     >
                                                         <option value="">
@@ -1338,7 +1338,7 @@ export default function Checkout() {
                                                         name="area"
                                                         value={formData.area}
                                                         onChange={handleInputChange}
-                                                        className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-pink-500 focus:border-pink-500"
+                                                        className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                                                         disabled={dhakaAreasLoading}
                                                     >
                                                         <option value="">
@@ -1370,7 +1370,7 @@ export default function Checkout() {
                                     placeholder="Delivery Address"
                                     rows={3}
                                     required
-                                    className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-pink-500 focus:border-pink-500 resize-none"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500 resize-none"
                                 />
                             </div>
 
@@ -1385,7 +1385,7 @@ export default function Checkout() {
                                     onChange={handleInputChange}
                                     placeholder="Enter notes here (optional)"
                                     rows={3}
-                                    className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-pink-500 focus:border-pink-500 resize-none"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500 resize-none"
                                 />
                             </div>
                         </div>
@@ -1397,8 +1397,8 @@ export default function Checkout() {
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                                 <label className={`flex items-center p-3 border rounded cursor-pointer transition-colors ${
                                     formData.deliveryType === 'insideDhaka' 
-                                        ? 'border-pink-500 bg-pink-50' 
-                                        : 'border-gray-300 hover:border-pink-300'
+                                        ? 'border-blue-500 bg-blue-50' 
+                                        : 'border-gray-300 hover:border-blue-300'
                                 }`}>
                                     <input
                                         type="radio"
@@ -1406,7 +1406,7 @@ export default function Checkout() {
                                         value="insideDhaka"
                                         checked={formData.deliveryType === 'insideDhaka'}
                                         onChange={handleInputChange}
-                                        className="mr-3 text-pink-500"
+                                        className="mr-3 text-blue-500"
                                     />
                                     <div>
                                         <div className="font-medium text-gray-900">Inside Dhaka</div>
@@ -1418,8 +1418,8 @@ export default function Checkout() {
                                 
                                 <label className={`flex items-center p-3 border rounded cursor-pointer transition-colors ${
                                     formData.deliveryType === 'subDhaka' 
-                                        ? 'border-pink-500 bg-pink-50' 
-                                        : 'border-gray-300 hover:border-pink-300'
+                                        ? 'border-blue-500 bg-blue-50' 
+                                        : 'border-gray-300 hover:border-blue-300'
                                 }`}>
                                     <input
                                         type="radio"
@@ -1427,7 +1427,7 @@ export default function Checkout() {
                                         value="subDhaka"
                                         checked={formData.deliveryType === 'subDhaka'}
                                         onChange={handleInputChange}
-                                        className="mr-3 text-pink-500"
+                                        className="mr-3 text-blue-500"
                                     />
                                     <div>
                                         <div className="font-medium text-gray-900">Sub Dhaka</div>
@@ -1439,8 +1439,8 @@ export default function Checkout() {
                                 
                                 <label className={`flex items-center p-3 border rounded cursor-pointer transition-colors ${
                                     formData.deliveryType === 'outsideDhaka' 
-                                        ? 'border-pink-500 bg-pink-50' 
-                                        : 'border-gray-300 hover:border-pink-300'
+                                        ? 'border-blue-500 bg-blue-50' 
+                                        : 'border-gray-300 hover:border-blue-300'
                                 }`}>
                                     <input
                                         type="radio"
@@ -1448,7 +1448,7 @@ export default function Checkout() {
                                         value="outsideDhaka"
                                         checked={formData.deliveryType === 'outsideDhaka'}
                                         onChange={handleInputChange}
-                                        className="mr-3 text-pink-500"
+                                        className="mr-3 text-blue-500"
                                     />
                                     <div>
                                         <div className="font-medium text-gray-900">Outside Dhaka</div>
@@ -1479,7 +1479,7 @@ export default function Checkout() {
                                         value="cash"
                                         checked={paymentMethod === 'cash'}
                                         onChange={(e) => setPaymentMethod(e.target.value)}
-                                        className="w-4 h-4 text-pink-500"
+                                        className="w-4 h-4 text-blue-500"
                                     />
                                     <span className="flex items-center gap-2">
                                         <span className="w-6 h-6 bg-gray-200 rounded flex items-center justify-center">💳</span>
@@ -1494,10 +1494,10 @@ export default function Checkout() {
                                         value="bkash"
                                         checked={paymentMethod === 'bkash'}
                                         onChange={(e) => setPaymentMethod(e.target.value)}
-                                        className="w-4 h-4 text-pink-500"
+                                        className="w-4 h-4 text-blue-500"
                                     />
                                     <span className="flex items-center gap-2">
-                                        <span className="w-6 h-6 bg-pink-500 rounded flex items-center justify-center text-white text-xs">▶</span>
+                                        <span className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center text-white text-xs">▶</span>
                                         Bkash Live
                                     </span>
                                 </label>
@@ -1509,7 +1509,7 @@ export default function Checkout() {
                                         value="manual"
                                         checked={paymentMethod === 'manual'}
                                         onChange={(e) => setPaymentMethod(e.target.value)}
-                                        className="w-4 h-4 text-pink-500"
+                                        className="w-4 h-4 text-blue-500"
                                     />
                                     <span className="flex items-center gap-2">
                                         <span className="w-6 h-6 bg-gray-200 rounded flex items-center justify-center">💰</span>
@@ -1520,9 +1520,9 @@ export default function Checkout() {
 
                             {/* Payment Instructions */}
                             {paymentMethod === 'bkash' && (
-                                <div className="mt-4 p-4 bg-pink-50 border border-pink-200 rounded-lg">
-                                    <h3 className="font-semibold text-pink-800 mb-2">Bkash Payment Instructions:</h3>
-                                    <div className="text-sm text-pink-700 space-y-1">
+                                <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                                    <h3 className="font-semibold text-blue-800 mb-2">Bkash Payment Instructions:</h3>
+                                    <div className="text-sm text-blue-700 space-y-1">
                                         <p><strong>Personal Bkash/Nogod:</strong> +88 018 40 20 90 60 - (Send money only)</p>
                                         <p><strong>Bkash Merchant:</strong> +88 016 10 80 04 74 - (Payment only)</p>
                                     </div>
@@ -1590,10 +1590,10 @@ export default function Checkout() {
                                 )}
                                 
                                 <div className="space-y-4">
-                                    <div className="flex items-center justify-between p-4 bg-pink-50 border border-pink-200 rounded-lg">
+                                    <div className="flex items-center justify-between p-4 bg-blue-50 border border-blue-200 rounded-lg">
                                         <div>
-                                            <h3 className="font-semibold text-pink-800">Available Coins</h3>
-                                            <p className="text-sm text-pink-600">{loyaltyData.coins} coins (৳{loyaltyData.totalValue})</p>
+                                            <h3 className="font-semibold text-blue-800">Available Coins</h3>
+                                            <p className="text-sm text-blue-600">{loyaltyData.coins} coins (৳{loyaltyData.totalValue})</p>
                                         </div>
                                         <div className="text-2xl">🪙</div>
                                     </div>
@@ -1624,7 +1624,7 @@ export default function Checkout() {
                                                             id="useLoyaltyPoints"
                                                             checked={useLoyaltyPoints}
                                                             onChange={(e) => setUseLoyaltyPoints(e.target.checked)}
-                                                            className="w-4 h-4 text-pink-500 cursor-pointer"
+                                                            className="w-4 h-4 text-blue-500 cursor-pointer"
                                                         />
                                                         <label htmlFor="useLoyaltyPoints" className="text-sm font-medium text-gray-700 cursor-pointer">
                                                             Pay with {coinsNeeded} coins (৳{subtotal})
@@ -1726,7 +1726,7 @@ export default function Checkout() {
                                 className={`flex-1 flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded font-semibold text-sm sm:text-base ${
                                     cartLoading || cart.length === 0 || outOfStockItems.length > 0 || stockLoading
                                         ? 'bg-gray-300 text-gray-500 cursor-not-allowed' 
-                                        : 'bg-pink-500 text-white hover:bg-pink-600'
+                                        : 'bg-blue-500 text-white hover:bg-blue-600'
                                 }`}
                             >
                                 {stockLoading ? 'Checking Stock...' :
@@ -1769,7 +1769,7 @@ export default function Checkout() {
                                     <p className="text-gray-500 mb-4">Your cart is empty</p>
                                     <button 
                                         onClick={() => router.push('/')}
-                                        className="px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600 text-sm"
+                                        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 text-sm"
                                     >
                                         Continue Shopping
                                     </button>
@@ -1865,7 +1865,7 @@ export default function Checkout() {
                                                     className={`p-1.5 sm:p-1 ${
                                                         isOutOfStock 
                                                             ? 'text-red-500 hover:text-red-700' 
-                                                            : 'text-pink-500 hover:text-pink-700'
+                                                            : 'text-blue-500 hover:text-blue-700'
                                                     }`}
                                                 >
                                                     <Trash2 className="w-4 h-4 sm:w-4 sm:h-4" />
@@ -1903,13 +1903,13 @@ export default function Checkout() {
                                     onChange={(e) => setCouponCode(e.target.value.toUpperCase())}
                                     placeholder="ENTER YOUR COUPON CODE"
                                     disabled={useLoyaltyPoints || isGuestCheckout}
-                                    className="flex-1 px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-pink-500 focus:border-pink-500 text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
+                                    className="flex-1 px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                                     onKeyPress={(e) => e.key === 'Enter' && !useLoyaltyPoints && !isGuestCheckout && handleApplyCoupon()}
                                 />
                                 <button
                                     onClick={handleApplyCoupon}
                                     disabled={couponLoading || !couponCode.trim() || useLoyaltyPoints || isGuestCheckout}
-                                    className="w-full sm:w-auto px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600 disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium flex items-center justify-center"
+                                    className="w-full sm:w-auto px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium flex items-center justify-center"
                                 >
                                     {couponLoading ? (
                                         <>
@@ -1968,7 +1968,7 @@ export default function Checkout() {
                                 </div>
                                 <div className="flex justify-between">
                                     <span className="text-gray-600">Delivery Charge</span>
-                                    <span className="text-pink-500 font-medium">Calculating...</span>
+                                    <span className="text-blue-500 font-medium">Calculating...</span>
                                 </div>
                                 <div className="flex justify-between">
                                     <span className="text-gray-600">Discount</span>
@@ -1990,7 +1990,7 @@ export default function Checkout() {
                                     {shippingCost === 0 ? (
                                         <span className="text-green-600 font-medium">Free</span>
                                     ) : (
-                                        <span className="text-pink-500 font-medium">{shippingCost} ৳</span>
+                                        <span className="text-blue-500 font-medium">{shippingCost} ৳</span>
                                     )}
                                 </div>
                                 
@@ -2038,11 +2038,11 @@ export default function Checkout() {
                                     <>
                                         <div className="flex justify-between">
                                             <span className="text-gray-600">Coins Used</span>
-                                            <span className="text-pink-600">{coinsNeeded} coins</span>
+                                            <span className="text-blue-600">{coinsNeeded} coins</span>
                                         </div>
                                         <div className="flex justify-between">
                                             <span className="text-gray-600">Remaining Coins</span>
-                                            <span className="text-pink-600">{remainingCoins} coins</span>
+                                            <span className="text-blue-600">{remainingCoins} coins</span>
                                         </div>
                                         <div className="flex justify-between">
                                             <span className="text-gray-600">Loyalty Discount</span>
@@ -2075,7 +2075,7 @@ export default function Checkout() {
                             className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded font-semibold text-sm ${
                                 cartLoading || cart.length === 0 || outOfStockItems.length > 0 || stockLoading
                                     ? 'bg-gray-300 text-gray-500 cursor-not-allowed' 
-                                    : 'bg-pink-500 text-white hover:bg-pink-600'
+                                    : 'bg-blue-500 text-white hover:bg-blue-600'
                             }`}
                         >
                             {stockLoading ? 'Checking...' :
