@@ -129,7 +129,7 @@ export default function PrivacyPolicy() {
             <div className="text-sm">
               <div className="flex items-center justify-center space-x-2 text-gray-700 mb-2">
                 <Mail className="w-4 h-4 text-pink-500" />
-                <span className="font-medium">Email: support@forpink.com</span>
+                <span className="font-medium">Email: support@amirobd.com</span>
               </div>
             </div>
           </div>

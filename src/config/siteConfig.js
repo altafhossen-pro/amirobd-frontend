@@ -1,17 +1,17 @@
 // Site Configuration
 export const siteConfig = {
   // Basic Site Info
-  name: "Forpink",
-  shortName: "Forpink",
+  name: "Amiro",
+  shortName: "Amiro",
   description: "Premium jewelry and accessories for every occasion",
-  url: "https://forpink.com",
+  url: "https://amirobd.com",
 
   // SEO Meta Tags
   seo: {
-    title: "Forpink - Premium Jewelry & Accessories",
+    title: "Amiro - Premium Jewelry & Accessories",
     description: "Discover our exclusive collection of premium jewelry, rings, necklaces, and accessories. Handcrafted with love and precision.",
     keywords: "jewelry, rings, necklaces, accessories, premium jewelry, handcrafted jewelry, forpink",
-    author: "Forpink Team",
+    author: "Amiro Team",
     robots: "index, follow",
     language: "en",
     charset: "utf-8",
@@ -31,13 +31,13 @@ export const siteConfig = {
     openGraph: {
       type: "website",
       locale: "en_US",
-      siteName: "Forpink",
+      siteName: "Amiro",
     },
   },
 
   // Contact Information
   contact: {
-    email: "info@forpink.com",
+    email: "info@amirobd.com",
     phone: "+8801313664466",
     address: "Badda, Dhaka, Bangladesh - 1212",
     hours: "Mon-Fri: 9AM-6PM, Sat: 10AM-4PM",
@@ -63,64 +63,64 @@ export const siteConfig = {
   // Page-specific titles and descriptions
   pages: {
     home: {
-      title: "Forpink - Premium Jewelry & Accessories",
+      title: "Amiro - Premium Jewelry & Accessories",
       description: "Discover our exclusive collection of premium jewelry, rings, necklaces, and accessories. Handcrafted with love and precision.",
     },
     shop: {
-      title: "Shop Jewelry - Forpink",
+      title: "Shop Jewelry - Amiro",
       description: "Browse our complete collection of jewelry including rings, necklaces, bracelets, and more.",
     },
     search: {
-      title: "Search Jewelry - Forpink",
+      title: "Search Jewelry - Amiro",
       description: "Search and find the perfect jewelry piece from our extensive collection.",
     },
     categories: {
-      title: "Jewelry Categories - Forpink",
+      title: "Jewelry Categories - Amiro",
       description: "Explore our jewelry by category - rings, necklaces, bracelets, earrings, and more.",
     },
     product: {
       title: "{{productName}}",
-      description: "{{productDescription}} - Premium jewelry from Forpink.",
+      description: "{{productDescription}} - Premium jewelry from Amiro.",
     },
     checkout: {
-      title: "Checkout - Forpink",
-      description: "Complete your jewelry purchase securely with Forpink.",
+      title: "Checkout - Amiro",
+      description: "Complete your jewelry purchase securely with Amiro.",
     },
     login: {
-      title: "Login - Forpink",
-      description: "Sign in to your Forpink account to access exclusive features.",
+      title: "Login - Amiro",
+      description: "Sign in to your Amiro account to access exclusive features.",
     },
     register: {
-      title: "Register - Forpink",
-      description: "Create your Forpink account to start shopping for premium jewelry.",
+      title: "Register - Amiro",
+      description: "Create your Amiro account to start shopping for premium jewelry.",
     },
     dashboard: {
-      title: "My Dashboard - Forpink",
-      description: "Manage your account, orders, and preferences at Forpink.",
+      title: "My Dashboard - Amiro",
+      description: "Manage your account, orders, and preferences at Amiro.",
     },
     admin: {
-      title: "Admin Dashboard - Forpink",
-      description: "Manage your Forpink store from the admin dashboard.",
+      title: "Admin Dashboard - Amiro",
+      description: "Manage your Amiro store from the admin dashboard.",
     },
     contact: {
-      title: "Contact Us - Forpink",
-      description: "Get in touch with Forpink for any questions or support.",
+      title: "Contact Us - Amiro",
+      description: "Get in touch with Amiro for any questions or support.",
     },
     faq: {
-      title: "FAQ - Forpink",
-      description: "Frequently asked questions about Forpink and our jewelry.",
+      title: "FAQ - Amiro",
+      description: "Frequently asked questions about Amiro and our jewelry.",
     },
     offers: {
-      title: "Special Offers - Forpink",
+      title: "Special Offers - Amiro",
       description: "Discover exclusive offers and discounts on premium jewelry.",
     },
     privacy: {
-      title: "Privacy Policy - Forpink",
-      description: "Learn about how Forpink protects your privacy and data.",
+      title: "Privacy Policy - Amiro",
+      description: "Learn about how Amiro protects your privacy and data.",
     },
     terms: {
-      title: "Terms & Conditions - Forpink",
-      description: "Read the terms and conditions for using Forpink services.",
+      title: "Terms & Conditions - Amiro",
+      description: "Read the terms and conditions for using Amiro services.",
     },
   },
 
@@ -128,7 +128,7 @@ export const siteConfig = {
   defaults: {
     image: "/images/logo.png",
     favicon: "/favicon.ico",
-    themeColor: "#E91E63", // Pink color for Forpink
+    themeColor: "#E91E63", // Pink color for Amiro
     backgroundColor: "#FFFFFF",
   },
 };
