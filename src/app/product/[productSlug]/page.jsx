@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
                 
                 return generateDynamicMetadata('product', {
                     productName: product.title,
-                    productDescription: product.description || product.shortDescription || `Premium ${product.title} from Amiro`,
+                    productDescription: product.description || product.shortDescription || `Premium ${product.title} from Forpink`,
                     image: product.featuredImage || product.images?.[0] || '/images/logo.png',
                     path: `/product/${productSlug}`
                 });

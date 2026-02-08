@@ -301,7 +301,7 @@ export default function OrderInvoicePage() {
                                 <div className="flex justify-between items-start">
                                     <div>
                                         <h1 className="text-2xl font-bold">INVOICE</h1>
-                                        <p className="text-pink-100 mt-1 text-sm">Amiro.com</p>
+                                        <p className="text-pink-100 mt-1 text-sm">Forpink.com</p>
                                         <p className="text-pink-100 text-sm">Premium Gold Jewelry & Accessories</p>
                                     </div>
                                     <div className="text-right">
@@ -342,7 +342,7 @@ export default function OrderInvoicePage() {
                                     <div>
                                         <h3 className="text-sm font-semibold text-gray-900 mb-1">From:</h3>
                                         <div className="text-gray-700 text-sm">
-                                            <div className="font-semibold">Amiro.com</div>
+                                            <div className="font-semibold">Forpink.com</div>
                                             <div>123 Jewelry Street, Dhaka 1000</div>
                                             <div className="flex items-center mt-1">
                                                 <Phone className="h-3 w-3 mr-1" />

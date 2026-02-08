@@ -1,6 +1,6 @@
 # Site Configuration System
 
-This directory contains the configuration system for the Amiro ecommerce website. It provides centralized management of site metadata, SEO settings, and page-specific information.
+This directory contains the configuration system for the Forpink ecommerce website. It provides centralized management of site metadata, SEO settings, and page-specific information.
 
 ## Files
 
@@ -18,7 +18,7 @@ The `siteConfig.js` file contains all the site-wide settings:
 import { siteConfig } from '@/config/siteConfig';
 
 // Access site information
-console.log(siteConfig.name); // "Amiro"
+console.log(siteConfig.name); // "Forpink"
 console.log(siteConfig.url); // "https://forpink.com"
 console.log(siteConfig.contact.email); // "info@forpink.com"
 ```
@@ -144,8 +144,8 @@ The configuration includes a `manifest.json` file for Progressive Web App featur
 pages: {
   // ... existing pages
   about: {
-    title: "About Us - Amiro",
-    description: "Learn more about Amiro and our jewelry business.",
+    title: "About Us - Forpink",
+    description: "Learn more about Forpink and our jewelry business.",
   },
 }
 ```

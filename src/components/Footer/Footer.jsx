@@ -26,8 +26,8 @@ const fallbackFooterData = {
   ],
   contact: {
     address: "Badda, Dhaka, Bangladesh - 1212",
-    phone: "+8801348964016",
-    email: "info@amirobd.com",
+    phone: "+8801313664466",
+    email: "info@forpink.com",
     callToAction: "Feel free to call & mail us anytime!"
   },
   socialMedia: [
@@ -89,7 +89,7 @@ export default function Footer() {
             <div className="flex items-center">
               <Link className='' href="/">
                 <Image
-                  src="/images/logo/logo-02.png"
+                  src="/images/logo.svg"
                   alt="FORPINK.COM"
                   width={190}
                   height={80}
@@ -212,7 +212,7 @@ export default function Footer() {
 
           {/* Connect Section */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-black">Connect Amirobd.com</h3>
+            <h3 className="text-lg font-semibold text-black">Connect Forpink.com</h3>
             {loading ? (
               <div className="space-y-3">
                 {[...Array(4)].map((_, index) => (
@@ -349,7 +349,7 @@ export default function Footer() {
         <div className="max-w-screen-2xl mx-auto px-4 py-6">
           <div className="text-center">
             <p className="text-gray-900 text-sm">
-              ©2025 AmiroBD. All rights reserved. Developed by <span className="text-pink-400 font-semibold hover:text-pink-500 transition-colors duration-300">AmiroBD</span>
+              ©2025 Forpink. All rights reserved. Developed by <span className="text-pink-400 font-semibold hover:text-pink-500 transition-colors duration-300">Forpink</span>
             </p>
           </div>
         </div>
