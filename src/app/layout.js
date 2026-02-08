@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* tag manager script here  */}
-        <Script
+        {/* <Script
           id="gtm-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -42,19 +42,19 @@ export default function RootLayout({ children }) {
               })(window,document,'script','dataLayer','GTM-WZBVXD9D');
             `,
           }}
-        />
+        /> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${geistSans.className} antialiased`}
       >
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-WZBVXD9D"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           />
-        </noscript>
+        </noscript> */}
         <AppProvider>
           <Suspense fallback={null}>
             <AffiliateTracker />
