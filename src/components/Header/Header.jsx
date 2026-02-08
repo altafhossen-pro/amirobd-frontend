@@ -282,8 +282,8 @@ function Header({ isTrackingShow = true }) {
                           href={item.href}
                           target={item.target}
                           className={`font-medium transition-colors ${isActive
-                            ? 'text-[#f18daa]'
-                            : 'text-gray-700 hover:text-[#f18daa]'
+                            ? 'text-[#2563EB]'
+                            : 'text-gray-700 hover:text-[#2563EB]'
                             }`}
                         >
                           {item.name}
@@ -295,7 +295,7 @@ function Header({ isTrackingShow = true }) {
 
                 {/* Right side - Track your order */}
                 {1==1 && (
-                  <Link href="/tracking" className="flex items-center space-x-2 text-gray-700 hover:text-[#f18daa] transition-colors">
+                  <Link href="/tracking" className="flex items-center space-x-2 text-gray-700 hover:text-[#2563EB] transition-colors">
                     <Truck className="w-4 h-4" />
                     <span className="font-medium">Track your order</span>
                   </Link>
