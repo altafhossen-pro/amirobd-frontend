@@ -45,7 +45,7 @@ function Header({ isTrackingShow = true }) {
     if (href === '/' && pathname === '/') {
       return true;
     }
-    
+
     // Handle New Arrivals - check for specific shop sort parameter
     if (href === '/shop?sort=new-arrivals') {
       if (pathname === '/shop') {
@@ -54,7 +54,7 @@ function Header({ isTrackingShow = true }) {
       }
       return false;
     }
-    
+
     // Handle regular Shop - only active when on /shop without sort parameter
     if (href === '/shop') {
       if (pathname === '/shop') {
@@ -64,27 +64,27 @@ function Header({ isTrackingShow = true }) {
       }
       return false;
     }
-    
+
     // Handle other routes - check if current pathname starts with the href
     if (href !== '/' && pathname.startsWith(href)) {
       return true;
     }
-    
+
     // Handle categories route
     if (href === '/categories' && pathname.startsWith('/categories')) {
       return true;
     }
-    
+
     // Handle offers route
     if (href === '/offers' && pathname.startsWith('/offers')) {
       return true;
     }
-    
+
     // Handle contact route
     if (href === '/contact-us' && pathname.startsWith('/contact-us')) {
       return true;
     }
-    
+
     return false;
   };
 
@@ -147,13 +147,13 @@ function Header({ isTrackingShow = true }) {
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/">
-                <Image
-                  src="/images/logo/logo-02.png"
+                <img
+                  src="/images/logo/logo.webp"
                   alt="Logo"
                   width={170}
                   height={70}
                   className="w-32 sm:w-40 "
-                  priority
+                // priority
                 />
               </Link>
             </div>
@@ -265,7 +265,7 @@ function Header({ isTrackingShow = true }) {
                 <div className="flex items-center space-x-8">
                   {/* Categories Megamenu */}
                   <CategoryMegamenu />
-                  
+
                   {/* Other navigation items */}
                   {menuLoading ? (
                     <div className="flex space-x-8">
@@ -294,7 +294,7 @@ function Header({ isTrackingShow = true }) {
                 </div>
 
                 {/* Right side - Track your order */}
-                {1==1 && (
+                {1 == 1 && (
                   <Link href="/tracking" className="flex items-center space-x-2 text-gray-700 hover:text-[#2563EB] transition-colors">
                     <Truck className="w-4 h-4" />
                     <span className="font-medium">Track your order</span>
@@ -337,12 +337,11 @@ function Header({ isTrackingShow = true }) {
                         href={item.href}
                         target={item.target}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className={`mobile-menu-item px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
-                          isActive
-                            ? 'bg-[#2563EB] text-white shadow-sm'
-                            : 'text-gray-700 hover:bg-blue-50 hover:text-[#2563EB]'
-                        }`}
-                        style={{ 
+                        className={`mobile-menu-item px-4 py-3 rounded-lg font-medium transition-all duration-200 ${isActive
+                          ? 'bg-[#2563EB] text-white shadow-sm'
+                          : 'text-gray-700 hover:bg-blue-50 hover:text-[#2563EB]'
+                          }`}
+                        style={{
                           animationDelay: `${index * 0.05}s`
                         }}
                       >

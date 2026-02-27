@@ -89,12 +89,12 @@ export default function Footer() {
             <div className="flex items-center">
               <Link className='' href="/">
                 <Image
-                  src="/images/logo/logo-02.png"
+                  src="/images/logo/logo.webp"
                   alt="Amirobd.com"
                   width={190}
                   height={80}
                   className="w-36 sm:w-40 "
-                  priority
+                // priority
                 />
               </Link>
             </div>
