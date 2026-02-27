@@ -3,14 +3,14 @@ export const siteConfig = {
   // Basic Site Info
   name: "Amiro",
   shortName: "Amiro",
-  description: "Premium jewelry and accessories for every occasion",
+  description: "Premium clothing and fashion wear for men and women.",
   url: "https://amirobd.com",
 
   // SEO Meta Tags
   seo: {
-    title: "Amiro - Premium Jewelry & Accessories",
-    description: "Discover our exclusive collection of premium jewelry, rings, necklaces, and accessories. Handcrafted with love and precision.",
-    keywords: "jewelry, rings, necklaces, accessories, premium jewelry, handcrafted jewelry, amiro",
+    title: "Amiro - Premium Clothing & Fashion Wear",
+    description: "Shop the latest premium clothing collection including t-shirts, shirts, hoodies, panjabi, and fashion essentials. Trendy, comfortable, and affordable styles for everyone.",
+    keywords: "clothing, fashion wear, t-shirts, shirts, hoodies, panjabi, men's fashion, women's fashion, streetwear, amiro bd",
     author: "Amiro Team",
     robots: "index, follow",
     language: "en",
@@ -38,9 +38,9 @@ export const siteConfig = {
   // Contact Information
   contact: {
     email: "info@amirobd.com",
-    phone: "+8801313664466",
-    address: "Badda, Dhaka, Bangladesh - 1212",
-    hours: "Mon-Fri: 9AM-6PM, Sat: 10AM-4PM",
+    phone: "+8801348964016",
+    address: "Notun Bazar, Vatara, Dhaka - 1212",
+    hours: "Saturday - Friday: 9AM-10PM",
   },
 
   // Navigation
@@ -63,12 +63,12 @@ export const siteConfig = {
   // Page-specific titles and descriptions
   pages: {
     home: {
-      title: "Amiro - Premium Jewelry & Accessories",
-      description: "Discover our exclusive collection of premium jewelry, rings, necklaces, and accessories. Handcrafted with love and precision.",
+      title: "Amiro - Premium Clothing & Fashion Wear",
+      description: "Discover our exclusive collection of premium clothing and fashion wear for men and women. Handcrafted with love and precision.",
     },
     shop: {
-      title: "Shop Jewelry - Amiro",
-      description: "Browse our complete collection of jewelry including rings, necklaces, bracelets, and more.",
+      title: "Shop Clothing & Fashion Wear - Amiro",
+      description: "Browse our complete collection of clothing and fashion wear including t-shirts, shirts, hoodies, panjabi, and more.",
     },
     search: {
       title: "Search Jewelry - Amiro",

@@ -13,57 +13,57 @@ export default function TermsConditions() {
       id: "general",
       title: "1. General",
       icon: FileText,
-      content: `FORPINK.COM is an eCommerce platform selling Beauty and Jewelry products. We reserve the right to change prices, policies, and content at any time without prior notice.`
+      content: `AMIROBD.COM is an eCommerce platform selling clothing and fashion products. Amiro reserves the right to change prices, policies, and website content at any time without prior notice.`
     },
     {
       id: "product-information",
       title: "2. Product Information",
       icon: ShoppingCart,
-      content: `We try our best to display accurate product descriptions and images. However, slight variations in color or design may occur due to lighting or screen differences.`
+      content: `We strive to provide accurate product descriptions, sizing details, and images. However, slight variations in color or design may occur due to lighting, photography, or screen differences.`
     },
     {
       id: "order-confirmation",
       title: "3. Order Confirmation",
       icon: FileText,
-      content: `An order is confirmed only after successful payment or confirmation call (if applicable).`
+      content: `An order is confirmed only after successful payment or confirmation call (if applicable). Amiro reserves the right to cancel or refuse any order at its discretion.`
     },
     {
       id: "pricing-payment",
       title: "4. Pricing & Payment",
       icon: CreditCard,
-      content: `• All prices are shown in BDT
-      • Payment methods may include Cash on Delivery, Mobile Banking, or Online Payment
-      • We reserve the right to cancel any suspicious order`
+      content: `• All prices are displayed in BDT
+      • Payment methods may include Cash on Delivery (COD), Mobile Banking, or Online Payment
+      • Amiro reserves the right to cancel any suspicious or fraudulent order`
     },
     {
       id: "shipping-delivery",
       title: "5. Shipping & Delivery",
       icon: Truck,
-      content: `Delivery time may vary depending on location and circumstances beyond our control.`
+      content: `Delivery time may vary depending on location and circumstances beyond our control. Customers are responsible for providing accurate shipping information.`
     },
     {
       id: "user-responsibility",
       title: "6. User Responsibility",
       icon: Users,
-      content: `You agree not to misuse the website or provide false information.`
+      content: `By using AMIROBD.COM, you agree not to misuse the website, attempt fraudulent activities, or provide false or misleading information.`
     },
     {
       id: "limitation-liability",
       title: "7. Limitation of Liability",
       icon: AlertTriangle,
-      content: `FORPINK.COM will not be liable for any indirect or incidental damages arising from the use of our products or services.`
+      content: `Amiro shall not be liable for any indirect, incidental, or consequential damages arising from the use of our products or services.`
     },
     {
       id: "governing-law",
       title: "8. Governing Law",
       icon: Scale,
-      content: `These Terms & Conditions are governed by the laws of Bangladesh.`
+      content: `These Terms & Conditions are governed by and interpreted in accordance with the laws of Bangladesh.`
     }
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      
+
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Header Section */}
@@ -115,11 +115,11 @@ export default function TermsConditions() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="flex items-center justify-center space-x-2 text-gray-600">
                 <Mail className="w-4 h-4 text-blue-500" />
-                <span>amiro@gmail.com</span>
+                <span>support@amirobd.com</span>
               </div>
               <div className="flex items-center justify-center space-x-2 text-gray-600">
                 <Phone className="w-4 h-4 text-blue-500" />
-                <span>+8801313664466</span>
+                <span>+8801348964016</span>
               </div>
             </div>
           </div>

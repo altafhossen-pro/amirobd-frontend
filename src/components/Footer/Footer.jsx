@@ -9,7 +9,7 @@ import { menuAPI } from '@/services/api';
 // Fallback footer data
 const fallbackFooterData = {
   about: {
-    description: "From your very first visit, discover exquisite pink jewelry crafted with love and precision, backed by a team that treats your style as their own."
+    description: "From your very first visit, discover premium fashion pieces crafted with care and precision, backed by a team that treats your style as their own."
   },
   quickLinks: [
     { name: "Home", href: "/", isActive: true },
@@ -25,8 +25,8 @@ const fallbackFooterData = {
     { name: "Contact Us", href: "/contact-us" },
   ],
   contact: {
-    address: "Badda, Dhaka, Bangladesh - 1212",
-    phone: "+8801313664466",
+    address: "Notun Bazar, Vatara, Dhaka - 1212",
+    phone: "+8801348964016",
     email: "info@amirobd.com",
     callToAction: "Feel free to call & mail us anytime!"
   },
@@ -90,7 +90,7 @@ export default function Footer() {
               <Link className='' href="/">
                 <Image
                   src="/images/logo/logo-02.png"
-                  alt="Amiro.com"
+                  alt="Amirobd.com"
                   width={190}
                   height={80}
                   className="w-36 sm:w-40 "
@@ -164,7 +164,7 @@ export default function Footer() {
                   className="h-10 w-auto object-contain"
                 />
               </a>
-              
+
               {/* Google Play Store Badge */}
               <a
                 href="https://play.google.com/store/apps/details?id=com.amiro.app"
@@ -212,7 +212,7 @@ export default function Footer() {
 
           {/* Connect Section */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-black">Connect Amiro.com</h3>
+            <h3 className="text-lg font-semibold text-black">Connect Amirobd.com</h3>
             {loading ? (
               <div className="space-y-3">
                 {[...Array(4)].map((_, index) => (

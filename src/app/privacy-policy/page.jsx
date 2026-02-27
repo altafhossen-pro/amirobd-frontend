@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
       id: "introduction",
       title: "Privacy Policy",
       icon: Shield,
-      content: `Welcome to FORPINK.COM. Your privacy is very important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you visit or purchase from our website.`
+      content: `Welcome to AMIROBD.COM. Your privacy is very important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you visit or purchase from our website. Amiro is a premium clothing and fashion brand committed to protecting your personal data.`
     },
     {
       id: "information-collection",
@@ -32,16 +32,16 @@ export default function PrivacyPolicy() {
       title: "2. How We Use Your Information",
       icon: Users,
       content: `We use your information to:
-      • Process and deliver your orders
+      • Process and deliver your clothing orders
       • Contact you regarding your order or support requests
-      • Improve our products, services, and website experience
-      • Send promotional offers (only if you agree)`
+      • Improve our fashion products, services, and website experience
+      • Send promotional offers and updates (only if you agree)`
     },
     {
       id: "information-protection",
       title: "3. Information Protection",
       icon: Lock,
-      content: `We take reasonable security measures to protect your personal data from unauthorized access, misuse, or disclosure.`
+      content: `We take reasonable security measures to protect your personal data from unauthorized access, misuse, or disclosure. Amiro uses secure systems to safeguard customer information.`
     },
     {
       id: "information-sharing",
@@ -56,25 +56,25 @@ export default function PrivacyPolicy() {
       id: "cookies",
       title: "5. Cookies",
       icon: FileText,
-      content: `FORPINK.COM uses cookies to improve your browsing experience and analyze website traffic.`
+      content: `AMIROBD.COM uses cookies to improve your browsing experience, personalize content, and analyze website traffic.`
     },
     {
       id: "consent",
       title: "6. Your Consent",
       icon: Shield,
-      content: `By using our website, you consent to our Privacy Policy.`
+      content: `By using AMIROBD.COM, you consent to our Privacy Policy.`
     },
     {
       id: "changes",
       title: "7. Changes to Privacy Policy",
       icon: Shield,
-      content: `We reserve the right to update this policy at any time. Changes will be posted on this page.`
+      content: `Amiro reserves the right to update this policy at any time. Any changes will be posted on this page.`
     }
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      
+
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Header Section */}

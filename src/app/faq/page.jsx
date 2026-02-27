@@ -64,7 +64,7 @@ export default function FAQ() {
                 {
                     id: "shipping-3",
                     question: "How much does shipping cost?",
-                    answer: "Shipping costs are calculated based on your location and the weight of your order. Standard shipping starts at ৳60, while express shipping starts at ৳120. Free shipping is available on orders over ৳2000."
+                    answer: "Shipping costs are calculated based on your location and the weight of your order. Standard shipping starts at inside Dhaka is 70 Taka BDT and outside Dhaka is 130 Taka BDT. Free shipping is available on orders over ৳2000 or above."
                 },
                 {
                     id: "shipping-4",
@@ -81,12 +81,12 @@ export default function FAQ() {
                 {
                     id: "returns-1",
                     question: "What is your return policy?",
-                    answer: "We accept returns within 30 days of delivery. Items must be unused, in original packaging, and in the same condition as received. Custom or personalized items may not be eligible for return."
+                    answer: "We accept returns within 07 days of delivery. Items must be unused, in original packaging, and in the same condition as received. Custom or personalized items may not be eligible for return."
                 },
                 {
                     id: "returns-2",
                     question: "How do I return an item?",
-                    answer: "To return an item, contact our customer service within 30 days of delivery. We'll provide you with a return authorization number and shipping label. Return shipping costs are the responsibility of the customer."
+                    answer: "To return an item, contact our customer service within 07 days of delivery. We'll provide you with a return authorization number and shipping label. Return shipping costs are the responsibility of the customer."
                 },
                 {
                     id: "returns-3",
@@ -96,7 +96,7 @@ export default function FAQ() {
                 {
                     id: "returns-4",
                     question: "What if my item arrives damaged?",
-                    answer: "If your item arrives damaged, please contact us within 48 hours of delivery. Take photos of the damage and we'll arrange for a replacement or refund. We'll cover the return shipping costs for damaged items."
+                    answer: "If your item arrives damaged, please contact us within 24 hours of delivery. Take photos of the damage and we'll arrange for a replacement or refund. We'll cover the return shipping costs for damaged items."
                 }
             ]
         },
@@ -107,23 +107,23 @@ export default function FAQ() {
             questions: [
                 {
                     id: "product-1",
-                    question: "Are your jewelry items authentic?",
-                    answer: "Yes, all our jewelry items are authentic and come with proper certification. We source our products from reputable suppliers and conduct quality checks before listing them on our website."
+                    question: "Are your clothing items original and high quality?",
+                    answer: "Yes, all Amiro clothing items are made using premium-quality fabrics and go through strict quality checks before being listed on our website. We focus on comfort, durability, and modern design."
                 },
                 {
                     id: "product-2",
-                    question: "Do you offer size customization?",
-                    answer: "Yes, we offer size customization for rings and some other jewelry items. Please contact our customer service before placing your order to discuss customization options and any additional costs."
+                    question: "Do you offer size options or customization?",
+                    answer: "We offer multiple standard size options (S, M, L, XL, etc.) depending on the product. Please check our size chart before placing your order. Currently, we do not offer custom tailoring unless specifically mentioned."
                 },
                 {
                     id: "product-3",
-                    question: "What materials are used in your jewelry?",
-                    answer: "We use high-quality materials including 18k gold, sterling silver, genuine diamonds, and other precious stones. Each product listing includes detailed information about materials and specifications."
+                    question: "What materials are used in your clothing?",
+                    answer: "Our products are made from high-quality fabrics such as premium cotton, blended fabrics, fleece, denim, and other comfortable materials. Each product page includes detailed fabric and care information."
                 },
                 {
                     id: "product-4",
-                    question: "Do you provide care instructions?",
-                    answer: "Yes, care instructions are provided with each purchase. We also have a comprehensive jewelry care guide on our website with tips for cleaning and maintaining your jewelry."
+                    question: "Do you provide washing and care instructions?",
+                    answer: "Yes, washing and care instructions are provided on the product label and in the product description. Following these instructions helps maintain color, fit, and fabric quality."
                 }
             ]
         },
@@ -154,33 +154,7 @@ export default function FAQ() {
                 }
             ]
         },
-        {
-            id: "warranty",
-            title: "Warranty & Support",
-            icon: Shield,
-            questions: [
-                {
-                    id: "warranty-1",
-                    question: "What warranty do you provide?",
-                    answer: "All our jewelry comes with a 1-year warranty against manufacturing defects. This covers issues with settings, clasps, and other structural problems. Normal wear and tear is not covered."
-                },
-                {
-                    id: "warranty-2",
-                    question: "How do I contact customer support?",
-                    answer: "You can contact us via email at amiro@gmail.com, phone at +8801XXXXXXXXX, or through our live chat feature. Our customer service team is available Monday-Friday, 9:00 AM - 6:00 PM."
-                },
-                {
-                    id: "warranty-3",
-                    question: "Do you offer repair services?",
-                    answer: "Yes, we offer repair services for jewelry purchased from us. Please contact our customer service to discuss repair options and costs. We also provide cleaning and maintenance services."
-                },
-                {
-                    id: "warranty-4",
-                    question: "What if I'm not satisfied with my purchase?",
-                    answer: "We want you to be completely satisfied with your purchase. If you're not happy, please contact us within 30 days and we'll work with you to resolve any issues or arrange a return."
-                }
-            ]
-        }
+
     ];
 
     return (
@@ -254,15 +228,15 @@ export default function FAQ() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                             <div className="flex items-center justify-center space-x-2 text-gray-600">
                                 <Mail className="w-4 h-4 text-blue-500" />
-                                <span>amiro@gmail.com</span>
+                                <span>info@amirobd.com</span>
                             </div>
                             <div className="flex items-center justify-center space-x-2 text-gray-600">
                                 <Phone className="w-4 h-4 text-blue-500" />
-                                <span>+8801XXXXXXXXX</span>
+                                <span>+8801348964016</span>
                             </div>
                         </div>
                         <div className="mt-4 text-sm text-gray-500">
-                            Available Monday-Friday, 9:00 AM - 6:00 PM
+                            Available Saturday-Friday, 9:00 AM - 10:00 PM
                         </div>
                     </div>
                 </div>

@@ -80,13 +80,13 @@ export default function ProductDetails({ productSlug }) {
                 // Set default size and color if available
                 if (data.data.variants && data.data.variants.length > 0) {
                     // Find first stock in variant (stockQuantity > 0 and stockStatus !== 'out_of_stock')
-                    const stockInVariant = data.data.variants.find(variant => 
+                    const stockInVariant = data.data.variants.find(variant =>
                         variant.stockQuantity > 0 && variant.stockStatus !== 'out_of_stock'
                     );
-                    
+
                     // Use stock in variant if available, otherwise use first variant
                     const defaultVariant = stockInVariant || data.data.variants[0];
-                    
+
                     const sizeAttr = defaultVariant.attributes.find(attr => attr.name === 'Size');
                     const colorAttr = defaultVariant.attributes.find(attr => attr.name === 'Color');
 
@@ -103,7 +103,7 @@ export default function ProductDetails({ productSlug }) {
                     } else {
                         setSelectedColor(""); // No color for this variant
                     }
-                    
+
                     // Auto-select default variant (stock in if available, otherwise first variant)
                     setSelectedVariantSku(defaultVariant.sku || defaultVariant._id);
                     setHasManuallySelectedVariant(true);
@@ -185,16 +185,16 @@ export default function ProductDetails({ productSlug }) {
     // Get selected variant (size optional, color optional)
     const getSelectedVariant = () => {
         if (!product?.variants) return null;
-        
+
         // First try to find by SKU (most reliable)
         if (selectedVariantSku) {
-            const variantBySku = product.variants.find(variant => 
+            const variantBySku = product.variants.find(variant =>
                 (variant.sku || variant._id) === selectedVariantSku
             );
-            
+
             if (variantBySku) return variantBySku;
         }
-        
+
         // Fallback to size/color matching if SKU not found
         return product.variants.find(variant => {
             const sizeAttr = variant.attributes.find(attr => attr.name === 'Size');
@@ -254,13 +254,13 @@ export default function ProductDetails({ productSlug }) {
         const variantsForSize = getAvailableVariantsForSize(size);
         if (variantsForSize.length > 0) {
             // Find first stock in variant for this size
-            const stockInVariant = variantsForSize.find(variant => 
+            const stockInVariant = variantsForSize.find(variant =>
                 variant.stockQuantity > 0 && variant.stockStatus !== 'out_of_stock'
             );
-            
+
             // Use stock in variant if available, otherwise use first variant
             const defaultVariant = stockInVariant || variantsForSize[0];
-            
+
             const colorAttr = defaultVariant.attributes.find(attr => attr.name === 'Color');
             if (colorAttr) {
                 setSelectedColor(colorAttr.value);
@@ -292,7 +292,7 @@ export default function ProductDetails({ productSlug }) {
             // If variant has no size, clear selectedSize to match variants without size
             setSelectedSize("");
         }
-        
+
         // Set color if variant has color, otherwise clear it
         const colorAttr = variant.attributes.find(attr => attr.name === 'Color');
         if (colorAttr) {
@@ -301,17 +301,17 @@ export default function ProductDetails({ productSlug }) {
             // If variant has no color, clear selectedColor to match variants without color
             setSelectedColor("");
         }
-        
+
         // Store the selected variant SKU to uniquely identify it
         setSelectedVariantSku(variant.sku || variant._id);
-        
+
         setHasManuallySelectedVariant(true);
     };
 
     // Get available variants for selected size (to show variant images)
     const getAvailableVariantsForSize = (size) => {
         if (!product?.variants) return [];
-        
+
         if (size) {
             // Filter variants by selected size
             return product.variants.filter(variant => {
@@ -740,7 +740,7 @@ export default function ProductDetails({ productSlug }) {
                                 {/* Variant Image Selector - Show variant images instead of color selector */}
                                 {(() => {
                                     const variantsToShow = getAvailableVariantsForSize(selectedSize);
-                                    
+
                                     return variantsToShow.length > 0 && (
                                         <div className="space-y-2">
                                             <label className="block text-sm font-medium text-gray-700">Select Variant</label>
@@ -748,22 +748,22 @@ export default function ProductDetails({ productSlug }) {
                                                 {variantsToShow.map((variant) => {
                                                     const sizeAttr = variant.attributes.find(attr => attr.name === 'Size');
                                                     const colorAttr = variant.attributes.find(attr => attr.name === 'Color');
-                                                    
+
                                                     // Check if this exact variant is selected by comparing SKU
                                                     const variantSku = variant.sku || variant._id;
                                                     const isSelected = selectedVariantSku && variantSku === selectedVariantSku;
-                                                    
+
                                                     // Get variant image from images array (first image) or fallback to featured image
-                                                    const variantImage = variant.images && variant.images.length > 0 
-                                                        ? (variant.images[0]?.url || variant.images[0]) 
+                                                    const variantImage = variant.images && variant.images.length > 0
+                                                        ? (variant.images[0]?.url || variant.images[0])
                                                         : (variant.image || product?.featuredImage);
-                                                    
+
                                                     // Build title with variant info
                                                     const variantTitle = [
                                                         sizeAttr?.value,
                                                         colorAttr?.value
                                                     ].filter(Boolean).join(' - ') || 'Variant';
-                                                    
+
                                                     return (
                                                         <button
                                                             key={variant.sku || variant._id}
@@ -964,9 +964,9 @@ export default function ProductDetails({ productSlug }) {
                                         <div className="text-gray-600 leading-relaxed">
                                             {product.description ? (
                                                 <>
-                                                    <div 
+                                                    <div
                                                         className="transition-all duration-300"
-                                                        dangerouslySetInnerHTML={{ __html: product.description.replace(/\n/g, '<br/>') }} 
+                                                        dangerouslySetInnerHTML={{ __html: product.description.replace(/\n/g, '<br/>') }}
                                                     />
                                                     {/* Show More/Less functionality commented out */}
                                                     {/* <button
@@ -1023,7 +1023,7 @@ export default function ProductDetails({ productSlug }) {
                                                     </div>
                                                     <div className="flex-1 min-w-0">
                                                         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Brand</p>
-                                                        <p className="text-sm font-semibold text-gray-900 truncate">{product.brand || 'ForPink'}</p>
+                                                        <p className="text-sm font-semibold text-gray-900 truncate">{product.brand || 'Amiro'}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1046,29 +1046,26 @@ export default function ProductDetails({ productSlug }) {
                                             {/* Stock Status Card */}
                                             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 border border-gray-200">
                                                 <div className="flex items-center gap-3">
-                                                    <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
-                                                        selectedVariant?.stockStatus === 'in_stock' ? 'bg-green-100' :
-                                                        selectedVariant?.stockStatus === 'out_of_stock' ? 'bg-red-100' :
-                                                        selectedVariant?.stockStatus === 'low_stock' ? 'bg-yellow-100' :
-                                                        'bg-blue-100'
-                                                    }`}>
-                                                        <svg className={`w-5 h-5 ${
-                                                            selectedVariant?.stockStatus === 'in_stock' ? 'text-green-600' :
-                                                            selectedVariant?.stockStatus === 'out_of_stock' ? 'text-red-600' :
-                                                            selectedVariant?.stockStatus === 'low_stock' ? 'text-yellow-600' :
-                                                            'text-blue-600'
-                                                        }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${selectedVariant?.stockStatus === 'in_stock' ? 'bg-green-100' :
+                                                            selectedVariant?.stockStatus === 'out_of_stock' ? 'bg-red-100' :
+                                                                selectedVariant?.stockStatus === 'low_stock' ? 'bg-yellow-100' :
+                                                                    'bg-blue-100'
+                                                        }`}>
+                                                        <svg className={`w-5 h-5 ${selectedVariant?.stockStatus === 'in_stock' ? 'text-green-600' :
+                                                                selectedVariant?.stockStatus === 'out_of_stock' ? 'text-red-600' :
+                                                                    selectedVariant?.stockStatus === 'low_stock' ? 'text-yellow-600' :
+                                                                        'text-blue-600'
+                                                            }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                                                         </svg>
                                                     </div>
                                                     <div className="flex-1 min-w-0">
                                                         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">Stock Status</p>
-                                                        <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold ${
-                                                            selectedVariant?.stockStatus === 'in_stock' ? 'bg-green-100 text-green-800' :
-                                                            selectedVariant?.stockStatus === 'out_of_stock' ? 'bg-red-100 text-red-800' :
-                                                            selectedVariant?.stockStatus === 'low_stock' ? 'bg-yellow-100 text-yellow-800' :
-                                                            'bg-blue-100 text-blue-800'
-                                                        }`}>
+                                                        <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold ${selectedVariant?.stockStatus === 'in_stock' ? 'bg-green-100 text-green-800' :
+                                                                selectedVariant?.stockStatus === 'out_of_stock' ? 'bg-red-100 text-red-800' :
+                                                                    selectedVariant?.stockStatus === 'low_stock' ? 'bg-yellow-100 text-yellow-800' :
+                                                                        'bg-blue-100 text-blue-800'
+                                                            }`}>
                                                             {selectedVariant?.stockStatus === 'in_stock' ? 'In Stock' :
                                                                 selectedVariant?.stockStatus === 'out_of_stock' ? 'Out of Stock' :
                                                                     selectedVariant?.stockStatus === 'low_stock' ? 'Low Stock' :

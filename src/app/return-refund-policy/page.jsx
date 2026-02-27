@@ -12,7 +12,7 @@ export default function ReturnRefundPolicy() {
       id: "important-notice",
       title: "IMPORTANT NOTICE",
       icon: AlertCircle,
-      content: `Customers must check the product in front of the delivery man at the time of delivery.`,
+      content: `Customers must check the clothing product in front of the delivery personnel at the time of delivery.`,
       highlight: true
     },
     {
@@ -21,16 +21,17 @@ export default function ReturnRefundPolicy() {
       icon: XCircle,
       content: `Once the delivery is accepted, no complaints, returns, or refunds will be accepted under any circumstances.
       
-      • No return after delivery man leaves
+      • No return after delivery personnel leaves
       • No return for change of mind
-      • No return for size, color, or design issues after delivery`,
+      • No return for size, color, or design issues after delivery
+      • No exchange once the product is accepted`,
       highlight: true
     },
     {
       id: "agreement",
       title: "Agreement",
       icon: CheckCircle,
-      content: `By placing an order on FORPINK.COM, you fully agree to this return policy.`
+      content: `By placing an order on AMIROBD.COM, you fully agree to this Return & Refund Policy of Amiro.`
     }
   ];
 
@@ -57,32 +58,32 @@ export default function ReturnRefundPolicy() {
             <div
               key={section.id}
               className={`rounded-lg p-6 shadow-sm border ${section.highlight
-                  ? 'bg-red-50 border-red-200'
-                  : 'bg-white border-gray-100'
+                ? 'bg-red-50 border-red-200'
+                : 'bg-white border-gray-100'
                 }`}
             >
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
                   <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${section.highlight
-                      ? 'bg-red-100'
-                      : 'bg-blue-100'
+                    ? 'bg-red-100'
+                    : 'bg-blue-100'
                     }`}>
                     <section.icon className={`w-5 h-5 ${section.highlight
-                        ? 'text-red-500'
-                        : 'text-blue-500'
+                      ? 'text-red-500'
+                      : 'text-blue-500'
                       }`} />
                   </div>
                 </div>
                 <div className="flex-1">
                   <h2 className={`text-xl font-semibold mb-3 ${section.highlight
-                      ? 'text-red-700'
-                      : 'text-gray-900'
+                    ? 'text-red-700'
+                    : 'text-gray-900'
                     }`}>
                     {section.title}
                   </h2>
                   <div className={`leading-relaxed ${section.highlight
-                      ? 'text-red-800'
-                      : 'text-gray-600'
+                    ? 'text-red-800'
+                    : 'text-gray-600'
                     }`}>
                     {section.content.split('\n').map((paragraph, pIndex) => (
                       paragraph.trim() ? (
@@ -112,7 +113,7 @@ export default function ReturnRefundPolicy() {
               </div>
               <div className="flex items-center justify-center space-x-2 text-gray-600">
                 <Phone className="w-4 h-4 text-blue-500" />
-                <span>+8801313664466</span>
+                <span>+8801348964016</span>
               </div>
             </div>
           </div>
